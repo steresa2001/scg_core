@@ -1,0 +1,194 @@
+//****  This is the master scss/css file for all button Styles  ****//
+
+//---- Start SCSS - CSS ----//
+
+%global-btn-style
+		{
+		display:$inl-blc;
+		background-color:$purple;
+		opacity:1;
+		transition:opacity .25s ease-in-out;
+		text-transform:capitalize;
+		text-decoration:none;
+		font-weight:$w-300;
+	&:hover {
+			opacity:.65;
+			}
+		}
+
+%btn-radius-all
+		{
+		@include border-radius-all($default-border-radius);
+		}
+
+%btn-radius-left-side
+		{
+		@include border-radius-left-side($default-border-radius, $one-side, $one-side, $default-border-radius);
+		}
+
+%btn-radius-right-side
+		{
+		@include border-radius-right-side($one-side, $default-border-radius, $default-border-radius, $one-side);
+		}
+
+%btn-radius-top
+		{
+		@include border-radius-top($default-border-radius, $default-border-radius, $one-side, $one-side);
+		}
+
+%btn-radius-bottom
+		{
+		@include border-radius-bottom($one-side, $one-side, $default-border-radius, $default-border-radius);
+		}
+
+.btn-radius-all
+		{
+		@extend %btn-radius-all;
+		}
+
+.btn-radius-left-side
+		{
+		@extend %btn-radius-left-side;
+		}
+
+.btn-radius-right-side
+		{
+		@extend %btn-radius-right-side;
+		}
+
+.btn-radius-top
+		{
+		@extend %btn-radius-top
+		}
+
+.btn-radius-bottom
+		{
+		@extend %btn-radius-bottom
+		}
+
+.simple-btn-xxxl 	
+		{
+		padding:$xxxl-btn-p;
+		color:$white;
+		font-size:calc-em($xxxl-btn-font-size, $context);
+		@extend %global-btn-style;
+		}
+.simple-btn-xxl 	
+		{
+		padding:$xxl-btn-p;
+		color:$white;
+		font-size:calc-em($xxl-btn-font-size, $context);
+		@extend %global-btn-style;
+		}
+.simple-btn-xl 	
+		{
+		padding:$xl-btn-p;
+		color:$white;
+		font-size:calc-em($xl-btn-font-size, $context);
+		@extend %global-btn-style;
+		}
+.default-btn 	
+		{
+		padding:$default-btn-p;
+		color:$white;
+		font-size:calc-em($default-btn-font-size, $context);
+		@extend %global-btn-style;
+		}
+.simple-btn-xs 	
+		{
+		padding:$xs-btn-p;
+		color:$white;
+		font-size:calc-em($xs-btn-font-size, $context);
+		@extend %global-btn-style;
+		}
+.simple-btn-xxs 	
+		{
+		padding:$xxs-btn-p;
+		color:$white;
+		font-size:calc-em($xxs-btn-font-size, $context);
+		@extend %global-btn-style;
+		}
+.simple-btn-xxxs 	
+		{
+		padding:$xxxs-btn-p;
+		color:$white;
+		font-size:calc-em($xxxs-btn-font-size, $context);
+		@extend %global-btn-style;
+		}
+%button-group-style
+		{
+	a 		{
+			float:left;
+			border-right:1px $b-solid $white;
+		&:last-child
+				{
+				border:none;
+				}
+			}	
+		}
+.button-groups
+		{
+		@extend %button-group-style; 	
+		}
+.button-groups-rounded
+		{
+		@extend %button-group-style; 
+	a:first-child
+			{
+			@extend %btn-radius-left-side;	
+			}
+	a:last-child
+			{
+			@extend %btn-radius-right-side;	
+			}
+			
+		}
+
+
+button 	{
+		outline:none;
+		border:none;
+	&:hover {
+			cursor:pointer;
+			}
+		}
+//---- End SCSS - CSS ----//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

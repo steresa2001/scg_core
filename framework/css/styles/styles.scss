@@ -1,0 +1,259 @@
+//---- Start Imported Styles ----//
+
+@import "css/reset/css_reset",
+"css/mixins/core_mixins",
+"css/variables/variables",
+"css/font/font",
+"css/functions/functions",
+"css/slider/flexslider",
+"css/syntax_highlighter/syntax_highlighter",
+"css/media_queries/media_queries",
+"css/grid/grid",
+"css/buttons/buttons",
+"css/forms/forms";
+
+//---- End Imported Styles ----//
+
+//---- Start SCSS - CSS ----//
+
+body 	{
+		@include standard-img;
+	.img-no-scale
+			{
+			max-width:none;	
+			}
+		}
+
+
+//////////// Start Header - CSS ////////////
+
+header 	{
+		width:$grid-ctn-100;
+		min-height:calc-em($header-min-height, $context);
+		position:$pos-rel;
+		background:$header-bg-color url('http://localhost:8888/core/images/header_bg.jpg') repeat-x left top;
+		border-bottom:calc-em($header-border-size, $context) $b-solid $header-border-color;
+		nav 		
+			{
+			width:$grid-ctn-100;
+			background-color:$nav-bg-color;
+			height:$nav-height;
+			border-bottom:calc-em($nav-border-size, $context) $b-solid $nav-border-color;
+			.logo 
+				{
+				a 	{
+					img {
+						margin:calc-em(-9px, $context) 0 0 calc-em(4px, $context);
+						}
+					}
+				}
+			ul 	{
+				li 	{
+					margin-top:calc-em(-20px, $context);
+					padding:calc-em(21px, $context) calc-em(12px, $context);
+					border-left:1px $b-solid #262626;
+					border-right:1px $b-solid #262626;
+					float:$float-l;
+					&:hover 
+						{
+						background:$black;
+						}
+					a 	{
+						padding:calc-em(21px, $context) 0;
+						font-family:$mavenPro;
+						font-size:calc-em(18px, $context);
+						color:$orange;
+						text-decoration:$text-dec-n;
+						}
+					}
+				li.active 
+					{
+					background:$black;	
+					}
+				}
+			}
+		.callout 	
+			{
+			margin-top:calc-em(20px, $context);
+			p 	{
+				padding:0 calc-em(40px, $context) calc-em(5px, $context) 0;
+				font-family:$oxygen;;
+				font-size:calc-em(40px, $context);
+				color:$white;
+				line-height:calc-em(20px, $context);
+				font-weight:$w-bold;
+				text-shadow: 4px 4px 2px #000;
+				}
+			.ctn-24  	
+				{
+				p 	{
+					padding:0 0 calc-em(12px, $context) calc-em(34px, $context);
+					font-size:calc-em(24px, $context);
+					color:#90d5e7;
+					font-weight:$w-normal;
+					text-shadow:none;
+					span.orange:before
+						{
+						top:calc-em(-3px, $context); 
+						font-size:calc-em(26px, $context);
+						color:#fdbb44;
+						vertical-align:middle;
+						position:relative;
+						}
+					}
+				}
+			}
+	
+		}
+
+//////////// End Header - CSS ////////////
+
+//////////// Start Index - CSS ////////////
+
+.index 	{
+	.icons 	{
+			@include center;
+		.ctn-8 	{
+				margin-top:calc-em(20px, $context);	
+				}
+		span.blue:before
+				{
+				font-size:calc-em(176px, $context);
+				color:#94a9b9;
+				@include backface-visibility;
+				}	
+			}
+	.ctn-10 {
+		span.blue:before
+				{
+				margin-left:calc-em(8px, $context);
+				font-size:calc-em(176px, $context);
+				color:$slate;
+				@include backface-visibility;
+				}	
+			}
+	.center {
+		img
+				{
+				margin:0 auto;
+				display:$blc;	
+				}	
+			}
+		}
+
+//////////// End Index - CSS ////////////
+
+//////////// Start Docs - CSS ////////////
+
+.docs 	{
+	h4 		{
+			padding-top:calc-em(20px, $context);
+			text-align:$align-c;
+			}
+	span.blue:before
+			{
+			font-size:calc-em(100px, $context);
+			color:$slate;
+			display:$blc;
+			@include backface-visibility;	
+			}
+	.settings, .align_center, .font, .hand_up, .play_button, .file, .circle_info, .show_thumbnails
+			{
+			display:$blc;
+			text-align:$align-c;
+		&:hover 
+				{
+				opacity:.5;
+				cursor:pointer;
+				}
+			}
+		}
+//////////// End Docs - CSS ////////////
+
+//////////// Start Grid - CSS ////////////
+
+.code-btn
+		{
+		padding:0 calc-em(30px, $context);
+		text-decoration:none;
+		}
+.code-btn:after
+		{
+		content:"See code";
+		}
+.code-btn:before
+		{
+		padding-right:calc-em(5px, $context);
+		font-size:calc-em(30px, $context);
+		}
+
+//////////// End Grid - CSS ////////////
+
+
+//////////// Start Sidebar - CSS ////////////
+
+.sidebar 
+		{
+		margin-top:calc-em(-15px, $context);
+		min-height:calc-em(600px, $context);
+		background:#fbf9f9;
+		border-left:1px $b-solid #efeded;
+		border-right:1px $b-solid #efeded;
+		box-sizing:$border-box;
+		-moz-box-sizing:$border-box;
+	ul 		{
+			margin:calc-em(30px, $context);
+		li  	{
+				padding:calc-em(6px, $context) 0;
+			a 		{
+					font-size:calc-em(16px, $context);
+					color:#90d5e7;
+					text-decoration:none;
+					font-weight:$w-normal;
+			&:hover 	{
+						font-weight:$w-bold;
+						}
+					}
+				}
+			.section
+				{
+				font-size:calc-em(20px, $context);
+				color:$aqua;
+				font-weight:$w-bold;	
+				}
+			}	
+		}
+
+//////////// End Sidebar - CSS ////////////
+
+//////////// Start Footer - CSS ////////////
+
+footer 	{
+		width:$grid-ctn-100;
+		height:calc-em($footer-height, $context);
+		background-color:$footer-bg-color;
+		border-top:calc-em($header-border-size, $context) $b-solid $header-border-color;
+		}
+
+//////////// End Footer - CSS ////////////
+
+
+//////////// Start Misc - CSS ////////////
+
+.border-bottom 
+		{
+		border-bottom:1px $b-solid #ccc;	
+		}
+.pos-rel 
+		{
+		position:$pos-rel;
+		}
+
+//////////// End Misc - CSS ////////////
+
+//---- End SCSS - CSS ----//
+
+
+
+
+

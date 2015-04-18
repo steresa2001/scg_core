@@ -1,0 +1,123 @@
+//****  This is the master scss/css file for all button Styles  ****//
+
+//---- Start SCSS - CSS ----//
+
+select 	{
+		background: transparent url("http://localhost:8888/core/images/down_arrow.png") no-repeat 97% 55%;
+		}
+@include placeholder-text
+		{
+		color:$light-grey;	
+		}
+input[type=text], input[type=email], input[type=tel], select
+		{
+		@include border-box;
+		@include border-radius-all($default-border-radius);
+		padding-left:calc-em(10px, $context);
+		width:90%;
+		height:30px;
+		font-size:calc-em(13px, $context);
+		color:$dark-grey;
+		border:1px $b-solid $light-grey;
+		-webkit-appearance:none;
+		outline:none;
+	&:focus
+			{
+			@include box-shadow(0, 0, 10px, $light-grey);
+			font-weight:$w-bold;
+			border:1px $b-solid $dark-grey;
+			}
+		}
+input[type=checkbox], input[type=radio]
+		{
+		margin-top:calc-em(17px, $context);
+		float:left;
+		}
+label 	{
+		padding:calc-em(8px, $context) 0;
+		display:$blc;
+		color:$slate;
+		}
+.label-float
+		{
+		padding-left:calc-em(6px, $context);
+		padding-right:calc-em(6px, $context);
+		float:left;
+		}
+.inline-label
+		{
+	label 	{
+			text-align:$align-r;
+			}
+		}
+.input-box
+		{
+		@include border-box;
+		padding-top:calc-em(7px, $context);
+		height:30px;
+		font-size:calc-em(14px, $context);
+		color:$slate;
+		background:$super-light-grey;
+		text-align:$align-c;
+		border-left:1px $b-solid $light-grey;
+		border-top:1px $b-solid $light-grey;
+		border-bottom:1px $b-solid $light-grey;
+		font-weight:$w-bold;
+	span 	{
+			color:$slate;
+			}
+		}
+.border-radius-right-side
+		{
+		@include border-radius-right-side($one-side, $default-border-radius, $default-border-radius, $one-side);	
+		}
+.select-arrow
+		{
+		width:20px; 
+		height:20px;
+		top:60%;
+		right:12%;
+		position:$pos-abs;
+		background-image: transparent url("http://localhost:8888/core/images/down_arrow.png") repeat none top right;
+		background-position: -380px -1717px;
+		}
+//---- End SCSS - CSS ----//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

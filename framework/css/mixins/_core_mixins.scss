@@ -1,0 +1,262 @@
+//****  This is the master scss/css file for all mixins	 ****//
+
+//---- Start Border Radius All Sides Mixin ----//
+
+@mixin border-radius-all($default-border-radius) 
+	{
+	border-radius:$default-border-radius;
+	-ms-border-radius:$default-border-radius;
+	-moz-border-radius:$default-border-radius;
+	-webkit-border-radius:$default-border-radius;
+	}
+
+//---- End Border Radius All Sides Mixin ----//
+
+//---- Start Border Radius Left Mixin ----//
+
+@mixin border-radius-left-side($default-border-radius, $one-side, $one-side, $default-border-radius) 
+	{
+	border-radius:$default-border-radius $one-side $one-side $default-border-radius;
+	-ms-border-radius:$default-border-radius $one-side $one-side $default-border-radius;
+	-moz-border-radius:$default-border-radius $one-side $one-side $default-border-radius;
+	-webkit-border-radius:$default-border-radius $one-side $one-side $default-border-radius;
+	}
+
+//---- End Border Radius Left Mixin ----//
+
+//---- Start Border Radius Right Mixin ----//
+
+@mixin border-radius-right-side($one-side, $default-border-radius, $default-border-radius, $one-side) 
+	{
+	border-radius:$one-side $default-border-radius $default-border-radius $one-side!important;
+	-ms-border-radius:$one-side $default-border-radius $default-border-radius $one-side!important;
+	-moz-border-radius:$one-side $default-border-radius $default-border-radius $one-side!important;
+	-webkit-border-radius:$one-side $default-border-radius $default-border-radius $one-side!important;
+	}
+
+//---- End Border Radius Right Mixin ----//
+
+//---- Start Border Radius Top Mixin ----//
+
+@mixin border-radius-top($default-border-radius, $default-border-radius, $one-side, $one-side) 
+	{
+	border-radius:$default-border-radius $default-border-radius $one-side $one-side;
+	-ms-border-radius:$default-border-radius $default-border-radius $one-side $one-side;
+	-moz-border-radius:$default-border-radius $default-border-radius $one-side $one-side;
+	-webkit-border-radius:$default-border-radius $default-border-radius $one-side $one-side;
+	}
+
+//---- End Border Radius Top Mixin ----//
+
+//---- Start Border Radius Bottom Mixin ----//
+
+@mixin border-radius-bottom($one-side, $one-side, $default-border-radius, $default-border-radius) 
+	{
+	border-radius:$one-side $one-side $default-border-radius $default-border-radius;
+	-ms-border-radius:$one-side $one-side $default-border-radius $default-border-radius;
+	-moz-border-radius:$one-side $one-side $default-border-radius $default-border-radius;
+	-webkit-border-radius:$one-side $one-side $default-border-radius $default-border-radius;
+	}
+
+//---- End Border Radius Bottom Mixin ----//
+
+//---- Start Box Shadow Mixin ----//
+
+@mixin box-shadow($top, $left, $blur, $color, $inset:"") 
+	{
+	-webkit-box-shadow:$top $left $blur $color #{$inset};
+    -moz-box-shadow:$top $left $blur $color #{$inset};
+    box-shadow:$top $left $blur $color #{$inset};
+	}
+
+//---- End Box Shadow Mixin ----//
+
+//---- Start Border Box Mixin ----//
+
+@mixin border-box()
+	{
+	box-sizing:$border-box;
+	-moz-box-sizing:border-box;
+	}
+
+//---- End Border Box Mixin ----//
+
+//---- Start Linear Gradient Mixin ----//
+
+@mixin linear-gradient($from, $to) 
+	{
+	background-color: $to;
+	background-image: -o-linear-gradient(top, $from, $to);
+	background-image: -ms-linear-gradient(top, $from, $to);
+	background-image: -moz-linear-gradient(top, $from, $to);
+	background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, $from), color-stop(1, $to) );
+	background-image: -webkit-linear-gradient(top, $from, $to);
+	background-image: linear-gradient(top, bottom, $from, $to);
+	}
+
+//---- End Linear Gradient Mixin ----//
+
+//---- Start Default Grid Container Mixin ----//
+
+@mixin ctn-default
+	{
+	float:$float-l;
+	padding:0;
+	margin:percentage($grid-ctn-vertical-margin/$grid-max-width) percentage($grid-ctn-horizontal-margin/$grid-max-width) percentage($grid-ctn-vertical-margin/$grid-max-width) percentage($grid-ctn-horizontal-margin/$grid-max-width);
+	display:inline-block; 
+	min-height:calc-em($grid-ctn-min-height, $context);
+	}
+
+//---- End Default Grid Container Mixin ----//
+
+//---- Start Stylized Grid Container Mixin ----//
+
+@mixin ctns-default
+	{
+	float:$float-l;
+	padding:0;
+	margin:percentage($grid-ctn-vertical-margin/$grid-max-width) percentage($grid-ctn-horizontal-margin/$grid-max-width) percentage($grid-ctn-vertical-margin/$grid-max-width) percentage($grid-ctn-horizontal-margin/$grid-max-width);
+	display:inline-block; 
+	min-height:calc-em($grid-ctn-min-height, $context);
+	background:#333;
+	}
+
+//---- End Stylized Grid Container Mixin ----//
+
+//---- Start Stylized Grid No Margin Container Mixin ----//
+
+@mixin ctnsp-default
+	{
+	float:$float-l;
+	padding:0;
+	margin:percentage($grid-ctn-vertical-margin/$grid-max-width) percentage($grid-ctn-horizontal-margin/$grid-max-width) percentage($grid-ctn-vertical-margin/$grid-max-width) percentage($grid-ctn-horizontal-margin/$grid-max-width);
+	display:inline-block; 
+	min-height:calc-em($grid-ctn-min-height, $context);
+	@include linear-gradient(#7d7d7d 1%, #4b4b4b 65%);
+	}
+
+//---- End Stylized Grid No Margin Container Mixin ----//
+
+//---- Start Clear Mixin ----//
+
+@mixin clear
+	{
+	clear:both !important;	
+	}
+
+//---- End Clear Mixin ----//
+
+//---- Start Glyphicons Mixin ----//
+
+@mixin glyphicons-font
+	{
+	@font-face 
+		{
+  		font-family:$glyphicons;
+  		src: url('http://localhost:8888/core/fonts/glyphicons-regular.eot');
+		src: url('http://localhost:8888/core/fonts/glyphicons-regular.eot?#iefix') format('embedded-opentype'), url('http://localhost:8888/core/fonts/glyphicons-regular.woff') format('woff'), url('http://localhost:8888/core/fonts/glyphicons-regular.ttf') format('truetype'), url('http://localhost:8888/core/fonts/glyphicons-regular.svg#glyphiconsregular') format('svg');
+    	font-weight: normal;
+    	font-style: normal;
+		}
+	.glyphicons 
+	    {
+	    display:$inl-blc;
+	    }
+	.glyphicons:before 
+	    {
+	    font-family:$glyphicons;
+	    -webkit-font-smoothing: antialiased;
+	    }
+	}
+
+//---- End Glyphicons Mixin ----//
+
+//---- Start Glyphicons Icon Mixin ----//
+
+@mixin glyphicons-icon 
+	{
+	.glyphicons-icon
+		{
+		display:$inl-blc;
+	  	width:calc-em(48px, $context);
+	  	height:calc-em(48px, $context);
+	  	margin:0 calc-em(8px, $context) 0 0;
+	  	line-height:calc-em(14px, $context);
+	  	vertical-align:text-top;
+	  	background-image:url(http://localhost:8888/core/images/glyphs/glyphicons.svg);
+	  	background-position:0 0;
+	  	background-repeat:no-repeat;
+	  	vertical-align:top;
+	  	*display:$inl;
+	  	*zoom:1;
+	  	*margin-right:.3em;	
+		}
+	}
+
+//---- End Glyphicons Icon Mixin ----//
+
+//---- Start Grid Extra Space Mixin ----//
+
+@mixin grid-ctn-x-space($v-space-x, $v-space-y) 
+	{
+  	margin:calc-em($v-space-x, $context) calc-em($v-space-y, $context);
+	}
+
+//---- End Grid Extra Space Mixin ----//
+
+//---- Start Transition Mixin ----//
+
+@mixin transition($all, $time, $easing) 
+	{
+	-webkit-transition:$all, $time, $easing;
+  	-moz-transition:$all, $time, $easing;
+  	-o-transition:$all, $time, $easing;
+  	transition:$all, $time, $easing;	
+	}
+
+//---- End Transition Mixin ----//
+
+//---- Start Backface Visibility Mixin ----//
+
+@mixin backface-visibility
+	{
+	-webkit-backface-visibility:hidden;	
+	} 
+
+//---- End Backface Visibility Mixin ----//
+
+
+//---- Start Center Mixin ----//
+
+@mixin center 
+	{
+	text-align:$center;	
+	}
+
+//---- End Center Mixin ----//
+
+@mixin standard-img
+	{
+img 	{
+		max-width:100%;
+		height:auto;
+		@include backface-visibility;
+		}
+	}
+
+//---- Start Placeholder Font Mixin ----//
+
+@mixin placeholder-text
+ 	{
+  	::-webkit-input-placeholder {@content}
+  	:-moz-placeholder           {@content}
+  	::-moz-placeholder          {@content}
+  	:-ms-input-placeholder      {@content}  
+ 	}
+
+//---- End Placeholder Font Mixin ----//
+
+
+
+
+

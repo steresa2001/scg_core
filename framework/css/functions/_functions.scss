@@ -1,0 +1,88 @@
+//****  This is the master scss/css file for all functions	 ****//
+
+//---- Start Sass Functions ----//
+
+	//**** $num ****//	(sets the number for each .column from 1 - 24)
+
+	//+++++++ @for loop iterates through each column creating the class and style for each column +++++++//
+	
+	@function my-calculation-function($some-number, $another-number)
+		{
+  		@return $some-number + $another-number;
+		
+		}
+
+	//%%%%%% Calculates custom grid in percentages including margins %%%%%%//
+	@for $num from 1 through 24
+		{
+		.grid-size-#{$num} {max-width:my-calculation-function(24.5, $num) * 2.5em!important;}
+		.grid-size-#{$num} {margin:0 10px;}
+		};
+
+	//%%%%%% Calculates grid in percentages including margins %%%%%%//
+	@for $num from 1 through 24
+		{
+		.ctns-#{$num} {width:percentage((20px * $num * 2 - 20)/($grid-max-width));}
+		.ctns-#{$num} {@include ctns-default;}
+		};
+
+	//%%%%%% Calculates grid in percentages including margins %%%%%%//
+	@for $num from 1 through 24
+		{
+		.ctn-#{$num} {width:percentage((20px * $num * 2 - 20)/($grid-max-width));}
+		.ctn-#{$num} {@include ctn-default;}
+		};
+	
+	//%%%%%% Calculates right offset in percentages %%%%%%//
+	@for $num from 1 through 24
+		{
+		.offset-r-#{$num} {margin-right:percentage((20px * $num * 2 + 8)/($grid-max-width));}
+		};
+
+	//%%%%%% Calculates left offset in percentages %%%%%%//
+	@for $num from 1 through 24
+		{
+		.offset-l-#{$num} {margin-left:percentage((20px * $num * 2 + 8)/($grid-max-width));}
+		};
+	
+	//%%%%%% Calculates left offset in percentages for columns with no margins%%%%%%//
+	@for $num from 1 through 24
+		{
+		.offset-l-nm-#{$num} {margin-right:percentage((20px * $num * 2)/($grid-max-width))!important;}
+		};
+
+	//%%%%%% Calculates right offset in percentages for columns with no margins%%%%%%//
+	@for $num from 1 through 24
+		{
+		.offset-r-nm-#{$num} {margin-right:percentage((20px * $num * 2)/($grid-max-width))!important;}
+		};
+	
+	//%%%%%% Calculates grid in pixels including margins %%%%%%//
+	@for $num from 1 through 24
+		{
+		.ctnsp-#{$num} {width:((20px * $num * 2 - 20px));}
+		.ctnsp-#{$num} {@include ctnsp-default;}
+		};
+
+	//%%%%%% Calculates grid in pixels not including margins %%%%%%//
+	@for $num from 1 through 24
+		{
+		.grid-no-margin div.ctnsp-#{$num} {margin: 0 0; width:((20px * $num * 2));}
+		};
+
+	//%%%%%% Calculates grid in percentages not including margins %%%%%%//
+	@for $num from 1 through 24
+		{
+		.grid-no-margin div.ctns-#{$num} {margin: 0 0; width:percentage((20.000px * $num * 2)/($grid-max-width));}
+		};
+
+
+	@for $num from 1 through 24
+		{
+		.grid-no-margin div.ctn-#{$num} {margin: 0 0; width:percentage((20.000px * $num * 2)/($grid-max-width));}
+		};
+
+
+	
+
+//---- End Sass Functions ----//

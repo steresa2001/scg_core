@@ -1,0 +1,144 @@
+//****  This is the master scss/css file for all font Styles  ****//
+
+@import "css/font/glyphicons";
+
+@function calc-em($target-px, $context) 
+	{
+  	@return ($target-px / $context) * 1em;
+	}
+
+body
+	{
+	font-family:$mavenPro;	
+	}
+h1, h2, h3, h4, h5, h6
+	{
+	padding:0;
+	line-height:$heading-line-height;
+	text-transform:capitalize;
+	}
+h1
+	{
+	color:$pinkish;
+	font-size:calc-em($heading1-size, $context);
+	font-family:$robotoCondensed;
+	font-style:$w-normal;
+	font-weight:$w-400;	
+	}
+h2
+	{
+	color:$cyan;
+	font-size:calc-em($heading2-size, $context);
+	font-family:$oxygen;
+	font-style:$w-normal;
+	font-weight:$w-300;	
+	}
+h3
+	{
+	color:$blue;
+	font-family:$oxygen;
+	font-size:calc-em($heading3-size, $context);
+	}
+h4 
+	{
+	color:$purple;
+	font-size:calc-em($heading4-size, $context);	
+	}
+h5 
+	{
+	color:$violet;
+	font-size:calc-em($heading5-size, $context);	
+	}
+h6 
+	{
+	color:$orange;
+	font-size:calc-em($heading6-size, $context);	
+	}
+%sub-head
+	{
+	padding-top:calc-em(5px, $context);
+	font-family:$raleway;
+	color:$default-sub-heading-color;
+	display:$blc;
+	line-height:calc-em($default-sub-heading-line-height, $context);
+	}
+.sub-head-large
+	{
+	@extend %sub-head;
+	font-family:$raleway;
+	font-size:calc-em($sub-heading-large, $context);	
+	}
+.no-style
+	{
+	h1, h2, h3, h4, h5, h6 
+		{
+		color:$black;
+		text-transform:initial;
+		}	
+	}
+p
+	{
+	padding-bottom:calc-em($p-padding, $context);
+	font-family:$mavenPro;
+	font-size:calc-em($p-font-size, $context);
+	color:$p-color;
+	font-weight:$w-lighter;
+	line-height:calc-em($p-line-height, $context);
+	}
+.showcase
+	{
+	margin-top:calc-em(14px, $context);
+	border-left:10px $b-solid #a4a4a4;
+	background:#F2F2F2;
+	p 	{
+		padding:$showcase-p-padding;	
+		}
+	a 	{
+		color:$pinkish;
+		}
+	}
+.grid-p
+	{
+	margin:0; 
+	padding:calc-em(4px, $context) 0 calc-em(4px, $context) 0;
+	font-family:$mavenPro;
+	font-size:calc-em(16px, $context);
+	color:$grid-p-color;
+	text-align:$align-c;   
+	font-weight:$w-bold;
+	line-height:calc-em($grid-p-line-height, $context);
+	}
+.display-content
+	{
+	padding:calc-em(20px, $context);
+	color:$dark-grey;
+	display:$blc;
+	line-height:calc-em($p-line-height, $context);
+	}
+a
+	{
+	font-family:inherit;
+	color:$default-links-color;
+	font-weight:$w-bold;
+	&:visited
+		{
+		text-transform:capitalize;
+		}
+	}
+small
+	{
+	padding-left:$small-left-padding;
+	font-size:$small-size;
+	color:$small-color;
+	letter-spacing:$small-size-leading;
+	}
+strong 
+	{
+	color:$aqua;
+	font-weight:$w-bold;	
+	}
+span 
+	{
+	color:$orange;
+	font-weight:$w-normal;	
+	}

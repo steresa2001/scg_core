@@ -1,0 +1,334 @@
+//---- Start Imported Styles ----//
+
+@import "css/variables/variables";
+@import "css/mixins/core_mixins";
+@import "css/font/font";
+
+//---- End Imported Styles ----//
+
+/*
+ * jQuery FlexSlider v2.2.0
+ * http://www.woothemes.com/flexslider/
+ *
+ * Copyright 2012 WooThemes
+ * Free to use under the GPLv2 license.
+ * http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * Contributing author:Tyler Smith (@mbmufffin)
+ */
+
+/* Browser Resets
+*********************************/
+
+.flex-container a:active, .flexslider a:active, .flex-container a:focus, .flexslider a:focus 
+	{
+  	outline:none;
+	}
+
+.slides, .flex-control-nav, .flex-direction-nav 
+	{
+  	margin:0;
+  	padding:0;
+  	list-style:none;
+	}
+
+/* Icon Fonts
+*********************************/
+/* Font-face Icons */
+@font-face 
+	{
+  	@include glyphicons-font;
+	}
+
+
+/* FlexSlider Necessary Styles
+*********************************/
+
+.flexslider 
+	{
+  	margin:0;
+  	padding:0;
+  		.slides 
+  			{
+    			> li 
+    				{
+				     display:none;
+				     @include backface-visibility;
+    				}
+			    img 
+			    	{
+			      	width:100%;
+			      	display:$blc;
+			   	 	}
+  			}
+	}
+
+/* Hide the slides before the JS is loaded. Avoids image jumping */
+
+.flex-pauseplay span 
+	{
+  	text-transform:capitalize;
+	}
+
+/* Clearfix for the .slides element */
+
+.slides:after 
+	{
+  	overflow:hidden;
+	}
+
+html[xmlns] .slides 
+	{
+  	display:$blc;
+	}
+
+* html .slides 
+	{
+  	height:1%;
+	}
+
+/* No JavaScript Fallback */
+/* If you are not using another script, such as Modernizr, make sure you
+ * include js that eliminates this class on page load */
+
+.no-js .slides > li:first-child 
+	{
+  	display:$blc;
+	}
+
+/* FlexSlider Default Theme
+*********************************/
+
+.flexslider 
+	{
+  	margin-top:calc-em(18px, $context);
+  	background:#fff;
+  	border:4px solid #fff;
+  	position:$pos-rel;
+  	zoom:1;
+  	@include box-shadow(1px, 4px, 10px, 2px, #000);
+	}
+
+.flex-viewport 
+	{
+  	max-height:2000px;
+  			
+  	@include transition(all, 1s, ease);
+	}
+
+.loading .flex-viewport 
+	{
+  	max-height:300px;
+  			;
+	}
+
+.flexslider .slides 
+	{
+  	zoom:1;
+	}
+
+.carousel li 
+	{
+  	margin-right:calc-em(5px, $context);
+  			;
+	}
+
+/* Direction Nav */
+
+.flex-direction-nav 
+	{
+  	*height:0;
+	 	a 
+		  {
+		  display:none;
+		  width:40px;	
+		  height:40px;
+		  margin:calc-em(-20px, $context) 0 0;
+		  position:$pos-abs;
+		  top:50%;
+		  z-index:10;
+		  overflow:hidden;
+		  opacity:0;
+		  cursor:pointer;
+		  color:#fff;
+		  text-shadow:1px 1px 0 #000;
+		  @include transition(all, .3s, ease);
+		  }
+		.flex-prev 
+			{
+    		left:calc-em(-50px, $context);
+    				;
+  			}
+  		.flex-next 
+  			{
+    		right:-50px;
+    		text-align:right;
+  			}
+	}
+
+.flexslider:hover 
+	{
+		.flex-prev 
+			{
+			display:$blc;
+			padding:calc-em(3px, $context) calc-em(3px, $context);
+    		opacity:0.2;
+    		left:10px;
+  			}
+  		.flex-next 
+  			{
+  			display:$blc;
+  			padding:calc-em(3px, $context) calc-em(3px, $context);
+    		opacity:0.2;
+    		right:10px;
+    			&:hover 
+    				{
+      				opacity:.5;
+    				}
+  			}
+		.flex-prev:hover 
+			{
+		    opacity:.5;
+		  	}
+	}
+
+.flex-direction-nav 
+	{
+  		.flex-disabled 
+  			{
+    		opacity:0!important;
+    		filter:alpha(opacity = 0);
+    		cursor:default;
+  			}
+  		a 
+  			{
+    			&:before 
+    				{
+      				font-family:$glyphicons;
+      				font-size:40px;
+      				display:$inl-blc;
+      				content:'\E217';
+    				}
+    			&.flex-next:before 
+    				{
+      				content:'\E218';
+    				}
+  			}
+	}
+
+/* Pause/Play */
+
+.flex-pauseplay a 
+	{
+  	display:$blc;
+  	width:20px;
+  	height:20px;
+  	position:$pos-abs;
+  	bottom:5px;
+  	left:10px;
+  	opacity:0.8;
+  	z-index:10;
+  	overflow:hidden;
+  	cursor:pointer;
+  	color:#000;
+  		&:before 
+  			{
+		    font-family:$glyphicons;
+		    font-size:20px;
+		    display:$inl-blc;
+		    content:'\E217';
+  			}
+		&:hover 
+			{
+		    opacity:1;
+		  	}
+  		&.flex-play:before 
+  			{
+    		content:'\E218';
+  			}
+	}
+
+/* Control Nav */
+
+.flex-control-nav 
+	{
+	width:100%;
+	position:$pos-abs;
+	bottom:-40px;
+	text-align:center;
+	  li 
+	  	{
+	    margin:0 calc-em(6px, $context);
+	    display:$inl-blc;
+	    zoom:1;
+	    *display:$inl;
+	  	}
+	}
+
+.flex-control-paging li a 
+	{
+	width:11px;
+	height:11px;
+	display:$blc;
+	background:$white;
+	opacity:.5;
+	cursor:pointer;
+	text-indent:-9999px;
+	@include border-radius-all(20px);
+	
+	  &:hover 
+	  	{
+	    opacity:.1;
+	  	}
+	  &.flex-active 
+	  	{
+	    opacity:.1;
+	    cursor:default;
+	  	}
+	}
+
+.flex-control-thumbs 
+	{
+	margin:calc-em(5px, $context) 0 0;
+	position:$pos-stat;
+	overflow:hidden;
+	  li 
+	  	{
+		width:25%;
+		float:$float-l;
+		margin:0;
+	  	}
+	  img 
+	  	{
+	    width:100%;
+	    display:$blc;
+	    opacity:.7;
+	    cursor:pointer;
+	    	&:hover 
+	    		{
+	      		opacity:1;
+	    		}
+	  	}
+	  .flex-active 
+	  	{
+	    opacity:1;
+	    cursor:default;
+	  	}
+	}
+
+@media screen and (max-width:860px) {
+
+.flex-direction-nav 
+	{
+    	.flex-prev 
+    		{
+      		opacity:1;
+      		left:10px;
+    		}
+	    .flex-next 
+	    	{
+	      	opacity:1;
+	      	right:10px;
+	    	}
+  	}
+}

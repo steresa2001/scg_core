@@ -1,0 +1,51 @@
+
+@media #{$iphone-port} {
+	
+	@for $num from 1 through 24
+		{
+		.ctns-#{$num} {width:100%!important; margin:0; @include clear;}
+		}
+
+		.grid-no-margin {margin-left:0 !important;}
+
+
+	@for $num from 1 through 24
+		{
+		.ctnsp-#{$num} {width:100%!important; margin:0; @include clear;}
+		}
+
+	@for $num from 1 through 24
+		{
+		.ctn-#{$num} {width:100%!important; margin:0; @include clear;}
+		}
+		
+body 	{
+	img 	{
+			margin:0 auto!important;
+			display:block;
+			}
+		}
+		
+	}
+
+@media #{$ipad-port} {
+
+	@for $num from 1 through 24
+		{
+		.ctns-#{$num} 	{}
+		}
+
+	@for $num from 1 through 24
+		{
+		.ctn-#{$num} 	{}
+		}
+		
+	}
+
+@media only screen and (width:768px) {
+	
+	// @for $num from 1 through 24
+	// 	{
+	// 	.ctnsp-#{$num} 	{width:((10 * $num * 3 - .2px))!important;}
+	// 	}
+}
