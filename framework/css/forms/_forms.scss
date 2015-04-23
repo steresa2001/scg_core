@@ -3,7 +3,7 @@
 //---- Start SCSS - CSS ----//
 
 select 	{
-		background: transparent url("http://localhost:8888/core/images/down_arrow.png") no-repeat 97% 55%;
+		background: transparent url("http://localhost:8888/framework/images/down_arrow.png") no-repeat 97% 55%;
 		}
 @include placeholder-text
 		{
@@ -78,7 +78,7 @@ label 	{
 		top:60%;
 		right:12%;
 		position:$pos-abs;
-		background-image: transparent url("http://localhost:8888/core/images/down_arrow.png") repeat none top right;
+		background-image: transparent url("http://localhost:8888/framework/images/down_arrow.png") repeat none top right;
 		background-position: -380px -1717px;
 		}
 //---- End SCSS - CSS ----//

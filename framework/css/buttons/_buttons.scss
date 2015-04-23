@@ -11,7 +11,8 @@
 		text-transform:capitalize;
 		text-decoration:none;
 		font-weight:$w-300;
-	&:hover {
+	&:hover	 
+			{
 			opacity:.65;
 			}
 		}
@@ -117,7 +118,8 @@
 		}
 %button-group-style
 		{
-	a 		{
+	a 		
+			{
 			float:left;
 			border-right:1px $b-solid $white;
 		&:last-child
@@ -140,18 +142,38 @@
 	a:last-child
 			{
 			@extend %btn-radius-right-side;	
-			}
-			
+			}	
 		}
 
+//---- Start Buttons With Icons----//
 
-button 	{
-		outline:none;
-		border:none;
-	&:hover {
-			cursor:pointer;
-			}
+.glyphicons.wifi:before, .glyphicons.user:before, .glyphicons.calendar:before, 
+.glyphicons.chat:before, .glyphicons.charts:before, .glyphicons.lock:before,
+	{
+	padding-right:$btn-icon-p;
+  	vertical-align:$valign-b;
+  	opacity:.65;
+	}
+.glyphicons.heart:before, .glyphicons.ok:before, .glyphicons.cogwheel:before, 
+.glyphicons.circle_question_mark:before, .glyphicons.shopping_cart:before, .glyphicons.sun:before
+ 	{
+ 	padding-left:$btn-icon-p;
+ 	padding-right:0;
+ 	vertical-align:$valign-b;
+ 	opacity:.65;
+ 	}
+
+//---- End Buttons With Icons----//
+
+button 	
+	{
+	outline:none;
+	border:none;
+	&:hover 
+		{
+		cursor:pointer;
 		}
+	}
 //---- End SCSS - CSS ----//
 
 

@@ -153,8 +153,8 @@
 	@font-face 
 		{
   		font-family:$glyphicons;
-  		src: url('http://localhost:8888/core/fonts/glyphicons-regular.eot');
-		src: url('http://localhost:8888/core/fonts/glyphicons-regular.eot?#iefix') format('embedded-opentype'), url('http://localhost:8888/core/fonts/glyphicons-regular.woff') format('woff'), url('http://localhost:8888/core/fonts/glyphicons-regular.ttf') format('truetype'), url('http://localhost:8888/core/fonts/glyphicons-regular.svg#glyphiconsregular') format('svg');
+  		src: url('http://localhost:8888/framework/fonts/glyphicons-regular.eot');
+		src: url('http://localhost:8888/framework/fonts/glyphicons-regular.eot?#iefix') format('embedded-opentype'), url('http://localhost:8888/framework/fonts/glyphicons-regular.woff') format('woff'), url('http://localhost:8888/framework/fonts/glyphicons-regular.ttf') format('truetype'), url('http://localhost:8888/framework/fonts/glyphicons-regular.svg#glyphiconsregular') format('svg');
     	font-weight: normal;
     	font-style: normal;
 		}
@@ -183,7 +183,7 @@
 	  	margin:0 calc-em(8px, $context) 0 0;
 	  	line-height:calc-em(14px, $context);
 	  	vertical-align:text-top;
-	  	background-image:url(http://localhost:8888/core/images/glyphs/glyphicons.svg);
+	  	background-image:url(http://localhost:8888/framework/images/glyphs/glyphicons.svg);
 	  	background-position:0 0;
 	  	background-repeat:no-repeat;
 	  	vertical-align:top;

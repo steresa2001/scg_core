@@ -31,7 +31,7 @@ header 	{
 		width:$grid-ctn-100;
 		min-height:calc-em($header-min-height, $context);
 		position:$pos-rel;
-		background:$header-bg-color url('http://localhost:8888/core/images/header_bg.jpg') repeat-x left top;
+		background:$header-bg-color url('http://localhost:8888/framework/images/header_bg.jpg') repeat-x left top;
 		border-bottom:calc-em($header-border-size, $context) $b-solid $header-border-color;
 		nav 		
 			{

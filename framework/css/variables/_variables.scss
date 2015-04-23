@@ -8,39 +8,39 @@
 
 //---- Start Header Variables ----//
 			
-			$header-bg-color:#141414;							//**** $header-bg-color ****// (sets the background color of the header)
-			$header-min-height:400px;							//**** $header-min-height ****// (sets the min height of the header)
-			$header-border-size:16px;							//**** $header-border-size ****// (sets the border size of the header)
-			$header-border-color:#1a1a1a;						//**** $header-border-color ****// (sets the border color of the header)
+	$header-bg-color:#141414;																//**** $header-bg-color ****// (sets the background color of the header)
+	$header-min-height:400px;																//**** $header-min-height ****// (sets the min height of the header)
+	$header-border-size:16px;																//**** $header-border-size ****// (sets the border size of the header)
+	$header-border-color:#1a1a1a;															//**** $header-border-color ****// (sets the border color of the header)
 
 //---- End Header Variables ----//
 
 //---- Start Nav Variables ----//
 			
-			$nav-bg-color:#181818;								//**** $nav-bg-color ****// (sets the background color of the nav)
-			$nav-height:68px;									//**** $nav-height ****// (sets the height of the nav)
-			$nav-border-size:2px;								//**** $nav-border-size ****// (sets the border size of the nav)
-			$nav-border-color:#313131;							//**** $nav-border-color ****// (sets the border color of the nav)
+	$nav-bg-color:#181818;																	//**** $nav-bg-color ****// (sets the background color of the nav)
+	$nav-height:68px;																		//**** $nav-height ****// (sets the height of the nav)
+	$nav-border-size:2px;																	//**** $nav-border-size ****// (sets the border size of the nav)
+	$nav-border-color:#313131;																//**** $nav-border-color ****// (sets the border color of the nav)
 
 //---- End Nav Variables ----//
 
 //---- Start Footer Variables ----//
 			
-			$footer-bg-color:#141414;							//**** $footer-bg-color ****// (sets the background color of the footer)
-			$footer-height:300px;								//**** $footer-height ****// (sets the height of the footer)
+	$footer-bg-color:#141414;																//**** $footer-bg-color ****// (sets the background color of the footer)
+	$footer-height:300px;																	//**** $footer-height ****// (sets the height of the footer)
 
 //---- End Footer Variables ----//
 
 //---- Start Grid Variables ----//
 
-			$grid-max-width:960px;								//**** $grid-max-width ****// (sets the max width of the grid)
-			$grid-min-width:320px;								//**** $grid-min-width ****// (sets the min width of the grid)
-			$grid-ctn-min-height:25px;							//**** $grid-ctn-min-height ****// (sets the min height of the grid column)
-			$grid-ctn-horizontal-margin:10px;					//**** $grid-ctn-horizontal-margin ****// (sets the horizontal margin of the grid column)
-			$grid-ctn-vertical-margin:10px; 					//**** $grid-ctn-vertical-margin ****// (sets the vertical margin of the grid column)
-			$grid-ctn-only-left-margin:10px;					//**** $grid-ctn-only-left-margin ****// (sets the left margin of the grid column and removes the right margin)
-			$grid-ctn-100:100%;									//**** $grid-ctn-100 ****// (sets grid column width to 100%)
-			$grid-ctn-no-margin:0px;							//**** $grid-ctn-no-margin ****// (removes margins on columns)
+	$grid-max-width:960px;																	//**** $grid-max-width ****// (sets the max width of the grid)
+	$grid-min-width:320px;																	//**** $grid-min-width ****// (sets the min width of the grid)
+	$grid-ctn-min-height:25px;																//**** $grid-ctn-min-height ****// (sets the min height of the grid column)
+	$grid-ctn-horizontal-margin:10px;														//**** $grid-ctn-horizontal-margin ****// (sets the horizontal margin of the grid column)
+	$grid-ctn-vertical-margin:10px; 															//**** $grid-ctn-vertical-margin ****// (sets the vertical margin of the grid column)
+	$grid-ctn-only-left-margin:10px;															//**** $grid-ctn-only-left-margin ****// (sets the left margin of the grid column and removes the right margin)
+	$grid-ctn-100:100%;																	//**** $grid-ctn-100 ****// (sets grid column width to 100%)
+	$grid-ctn-no-margin:0px;																//**** $grid-ctn-no-margin ****// (removes margins on columns)
 
 //---- End Grid Variables ----//
 
@@ -67,48 +67,48 @@
 		//++++++++++++++++++++++++++++ Font Family ++++++++++++++++++++++++++++//
 
 			//%%%%%% Font Family %%%%%%//						
-			$robotoCondensed:'Roboto Condensed', sans-serif;	//**** $robotoCondensed: ****// (sets the font family for all h1's)
-			$oxygen:'Oxygen', sans-serif;						//**** $oxygen: ****// (sets the font family for all h2's)
-			$raleway:'Raleway', sans-serif;						//**** $raleway: ****// (sets the font family for all sub-headings)
-			$mavenPro:'Maven Pro', sans-serif;					//**** $mavenPro: ****// (sets the font family for all paragraphs)
-			$glyphicons:'Glyphicons Regular';					//**** $glyphicons: ****// (sets the font family for glyphicons)
+			$robotoCondensed:'Roboto Condensed', sans-serif;							//**** $robotoCondensed: ****// (sets the font family for all h1's)
+			$oxygen:'Oxygen', sans-serif;													//**** $oxygen: ****// (sets the font family for all h2's)
+			$raleway:'Raleway', sans-serif;													//**** $raleway: ****// (sets the font family for all sub-headings)
+			$mavenPro:'Maven Pro', sans-serif;												//**** $mavenPro: ****// (sets the font family for all paragraphs)
+			$glyphicons:'Glyphicons Regular';												//**** $glyphicons: ****// (sets the font family for glyphicons)
 
 		//++++++++++++++++++++++++++++ Headings ++++++++++++++++++++++++++++//
 
 			//%%%%%% Sizes %%%%%%//
-			$context:16px;										//**** $context ****// (sets the base size for your px's)
+			$context:16px;																	//**** $context ****// (sets the base size for your px's)
 
 
-			$heading1-size:48px;								//**** $heading1-size ****// (sets the size for all h1's)
-			$heading2-size:40px;								//**** $heading2-size ****// (sets the size for all h2's)
-			$heading3-size:30px;								//**** $heading3-size ****// (sets the size for all h3's)
-			$heading4-size:22px;								//**** $heading4-size ****// (sets the size for all h4's)
-			$heading5-size:18px;								//**** $heading5-size ****// (sets the size for all h5's)
-			$heading6-size:14px;								//**** $heading6-size ****// (sets the size for all h6's)
+			$heading1-size:48px;															//**** $heading1-size ****// (sets the size for all h1's)
+			$heading2-size:40px;															//**** $heading2-size ****// (sets the size for all h2's)
+			$heading3-size:30px;															//**** $heading3-size ****// (sets the size for all h3's)
+			$heading4-size:22px;															//**** $heading4-size ****// (sets the size for all h4's)
+			$heading5-size:18px;															//**** $heading5-size ****// (sets the size for all h5's)
+			$heading6-size:14px;															//**** $heading6-size ****// (sets the size for all h6's)
 
 			//%%%%%% Margins %%%%%%//
-			$main-heading-margin:5px;							//**** $main-heading-margin ****// (sets the top and bottom margin for h1)
-			$heading-margin:10px;								//**** $heading-margin ****// (sets the top and bottom margin for all other headings)
+			$main-heading-margin:5px;														//**** $main-heading-margin ****// (sets the top and bottom margin for h1)
+			$heading-margin:10px;															//**** $heading-margin ****// (sets the top and bottom margin for all other headings)
 
 			//%%%%%% Paddings %%%%%%//
-			$heading-padding:10px;								//**** $heading-padding ****// (sets the left and right padding for all headings)
+			$heading-padding:10px;														//**** $heading-padding ****// (sets the left and right padding for all headings)
 
 			//%%%%%% Line Height %%%%%%//
-			$heading-line-height:1.4; 							//**** $heading-line-height ****// (sets the line height for all headings)
+			$heading-line-height:1.4; 														//**** $heading-line-height ****// (sets the line height for all headings)
 		
 		//++++++++++++++++++++++++++++ Sub-Headings ++++++++++++++++++++++++++++//
 			
 			//%%%%%% Sizes %%%%%%//
-			$sub-heading-large:24px;							//**** $sub-heading-large ****// (sets the size for a large sub-heading)
+			$sub-heading-large:24px;														//**** $sub-heading-large ****// (sets the size for a large sub-heading)
 
 			//%%%%%% Paddings %%%%%%//
-			$default-sub-heading-padding:5px;					//**** $default-sub-heading-padding ****// (sets the default padding for all sub-headings)
+			$default-sub-heading-padding:5px;												//**** $default-sub-heading-padding ****// (sets the default padding for all sub-headings)
 
 			//%%%%%% Colors %%%%%%//
-			$default-sub-heading-color:#b2b1b1;					//**** $default-sub-heading-color ****// (sets the default color for all sub-headings)
+			$default-sub-heading-color:#b2b1b1;											//**** $default-sub-heading-color ****// (sets the default color for all sub-headings)
 	
 			//%%%%%% Line Height %%%%%%//
-			$default-sub-heading-line-height:20px; 				//**** $default-sub-heading-line-height ****// (sets the default line height for all sub-headings)
+			$default-sub-heading-line-height:20px; 											//**** $default-sub-heading-line-height ****// (sets the default line height for all sub-headings)
 
 		//++++++++++++++++++++++++++++ Paragraphs ++++++++++++++++++++++++++++//
 			
@@ -132,16 +132,18 @@
 		//++++++++++++++++++++++++++++ Font Style Types ++++++++++++++++++++++++++++//
 
 			//%%%%%% Font Styles %%%%%%//	
-			$s-italic:italic;									//**** $sitalic ****// (sets the font style to italic)
-			$s-capitalize:capitalize;							//**** $s-capitalize ****// (sets the font style to capitalize)
+			$s-italic:italic;																	//**** $sitalic ****// (sets the font style to italic)
+			$s-capitalize:capitalize;															//**** $s-capitalize ****// (sets the font style to capitalize)
 
 			//%%%%%% Font Weight %%%%%%//	
-			$w-normal:normal;									//**** $normal ****// (sets the font weight to normal)
-			$w-bold:bold;										//**** $bold ****// (sets the font weight to bold)
-			$w-bolder:bolder;									//**** $bolder ****// (sets the font weight even bolder)
-			$w-lighter:lighter;									//**** $bolder ****// (sets the font weight to light)
+			$w-normal:normal;																//**** $normal ****// (sets the font weight to normal)
+			$w-bold:bold;																	//**** $bold ****// (sets the font weight to bold)
+			$w-bolder:bolder;																//**** $bolder ****// (sets the font weight even bolder)
+			$w-lighter:lighter;																//**** $bolder ****// (sets the font weight to light)
 
-			$w-100:100;											// defines from thin to thick characters. 400 is the same as normal, and 700 is the same as bold
+			/* defines from thin to thick characters. 
+			400 is the same as normal, and 700 is the same as bold */
+			$w-100:100;																	
 			$w-200:200;
 			$w-300:300;
 			$w-400:400;
@@ -156,20 +158,23 @@
 
 		//++++++++++++++++++++++++++++ Font Alignment ++++++++++++++++++++++++++++//
 
-			$align-l:left;										//**** $align-l ****// (sets the font alignment to left)
-			$align-r:right;										//**** $align-r ****// (sets the font alignment to right)
-			$align-c:center;									//**** $align-c ****// (sets the font alignment to center)
-			$align-j:justify;									//**** $align-j ****// (sets the font alignment to justified)
+			$align-l:left;																		//**** $align-l ****// (sets the font alignment to left)
+			$align-r:right;																	//**** $align-r ****// (sets the font alignment to right)
+			$align-c:center;																	//**** $align-c ****// (sets the font alignment to center)
+			$align-j:justify;																	//**** $align-j ****// (sets the font alignment to justified)
+			$valign-t:top;																	//**** $valign-t ****// (sets the vertical font alignment to top)
+			$valign-m:middle;																//**** $valign-m****// (sets the vertical font alignment to middle)
+			$valign-b:bottom;																//**** $valign-b ****// (sets the vertical font alignment to bottom)
 
 		//++++++++++++++++++++++++++++ Anchor Tags ++++++++++++++++++++++++++++//
 			
 			//%%%%%% Colors %%%%%%//
-			$default-links-color:inherit;						//**** $default-links-color ****// (sets default link color)
-			$default-links-visited-color:#fdbb44;				//**** $default-links-visited-color ****// (sets visited link color)
+			$default-links-color:inherit;														//**** $default-links-color ****// (sets default link color)
+			$default-links-visited-color:#fdbb44;												//**** $default-links-visited-color ****// (sets visited link color)
 
 			//%%%%%% Style %%%%%%//
-			$text-dec-un:underline;								//**** $text-dec-un ****// (sets text decoration to underline)
-			$text-dec-n:none;									//**** $text-dec-un ****// (sets text decoration to none)
+			$text-dec-un:underline;															//**** $text-dec-un ****// (sets text decoration to underline)
+			$text-dec-n:none;																//**** $text-dec-un ****// (sets text decoration to none)
 		
 		//++++++++++++++++++++++++++++ Buttons ++++++++++++++++++++++++++++//
 			
@@ -191,6 +196,9 @@
 			$xxs-btn-p:8px;
 			$xxxs-btn-p:6px;
 
+			//%%%%%% Paddings For Font Icons %%%%%%//
+			$btn-icon-p:6px;
+
 			//%%%%%% Border Radius %%%%%%//
 			$default-border-radius:10px !default;
 			$one-side:0px !default;
@@ -198,15 +206,15 @@
 		//++++++++++++++++++++++++++++ Misc ++++++++++++++++++++++++++++//
 		
 			//%%%%%% <small> Tag %%%%%%//
-			$small-left-padding:20px;							//**** $small-left-padding ****// (sets the left padding size for all small elements)
-			$small-size:12px;									//**** $small-size ****// (sets the size for all small elements)
-			$small-color:#6c6c6c;								//**** $small-size-color ****// (sets the color for all small elements)
-			$small-size-leading:4px;							//**** $small-size-leading ****// (sets the leading size for all small elements)
-			$small-text-indent:20px;							//**** $small-text-indent ****// (sets the text indent size for all small elements)
+			$small-left-padding:20px;														//**** $small-left-padding ****// (sets the left padding size for all small elements)
+			$small-size:12px;																//**** $small-size ****// (sets the size for all small elements)
+			$small-color:#6c6c6c;															//**** $small-size-color ****// (sets the color for all small elements)
+			$small-size-leading:4px;															//**** $small-size-leading ****// (sets the leading size for all small elements)
+			$small-text-indent:20px;															//**** $small-text-indent ****// (sets the text indent size for all small elements)
 
 			//%%%%%% Showcase %%%%%%//
-			$showcase-bgcolor:#1e1e1e;							//**** $showcase-bgcolor ****// (sets the background color for showcase wrapper)
-			$showcase-p-padding:20px 20px;						//**** $showcase-p-padding ****// (sets the paragraph padding for showcase wrapper)
+			$showcase-bgcolor:#1e1e1e;													//**** $showcase-bgcolor ****// (sets the background color for showcase wrapper)
+			$showcase-p-padding:20px 20px;												//**** $showcase-p-padding ****// (sets the paragraph padding for showcase wrapper)
 
 //---- End Font Variables ----//
 
@@ -214,19 +222,19 @@
 
 		//++++++++++++++++++++++++++++ Positioning ++++++++++++++++++++++++++++//
 			
-			$pos-rel:relative;									//**** $pos-rel ****// (sets the position to relative)
-			$pos-abs:absolute;									//**** $pos-abs// (sets the position to absolute)
-			$pos-fix:fixed;										//**** $pos-fix// (sets the position to fixed)
-			$pos-stat:static;									//**** $pos-stat// (sets the position to static)
-			$float-l:left;										//**** $float-l// (floats elements to the left)
-			$float-r:right;										//**** $float-r// (floats elements to the right)
-			$center:center;										//**** $center// (centers elements)
+			$pos-rel:relative;																//**** $pos-rel ****// (sets the position to relative)
+			$pos-abs:absolute;																//**** $pos-abs// (sets the position to absolute)
+			$pos-fix:fixed;																	//**** $pos-fix// (sets the position to fixed)
+			$pos-stat:static;																	//**** $pos-stat// (sets the position to static)
+			$float-l:left;																		//**** $float-l// (floats elements to the left)
+			$float-r:right;																	//**** $float-r// (floats elements to the right)
+			$center:center;																	//**** $center// (centers elements)
 
 		//++++++++++++++++++++++++++++ Display Type ++++++++++++++++++++++++++++//
 
-			$blc:block;											//**** $blc ****// (sets the display type to block)
-			$inl:inline;										//**** $inl ****// (sets the display type to inline)
-			$inl-blc:inline-block;								//**** $inl-blc ****// (sets the display type to inline block)
+			$blc:block;																		//**** $blc ****// (sets the display type to block)
+			$inl:inline;																		//**** $inl ****// (sets the display type to inline)
+			$inl-blc:inline-block;																//**** $inl-blc ****// (sets the display type to inline block)
 
 		//++++++++++++++++++++++++++++ Widths ++++++++++++++++++++++++++++//
 
@@ -241,7 +249,7 @@
 			$b-solid:solid;
 			$b-dotted:dotted;
 			$b-dashed:dashed;
-			$border-box:border-box;								//**** $border-box ****// (sets the box size to border box)
+			$border-box:border-box;														//**** $border-box ****// (sets the box size to border box)
 
 //---- End Style Variables ----//
 
@@ -249,11 +257,11 @@
 
 		//++++++++++++++++++++++++++++ iPhone Portrait ++++++++++++++++++++++++++++//
 		
-		$iphone-port:'only screen and (min-width:320px) and (max-width:480px)';									//**** $iphone-port ****// (sets the media query iPhone portrait)
+		$iphone-port:'only screen and (min-width:320px) and (max-width:480px)';			//**** $iphone-port ****// (sets the media query iPhone portrait)
 		
 		//++++++++++++++++++++++++++++ iPad Portrait ++++++++++++++++++++++++++++//
 		
-		$ipad-port:'only screen and (min-width:767px) and (max-width:1023px)';									//**** $ipad-port ****// (sets the media query for iPad portrait)
+		$ipad-port:'only screen and (min-width:767px) and (max-width:1023px)';				//**** $ipad-port ****// (sets the media query for iPad portrait)
 
 
 //---- End Media Query Variables ----//
