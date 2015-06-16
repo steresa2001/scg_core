@@ -40,9 +40,9 @@ table {
   border-spacing: 0;
   border-collapse: collapse; }
 
-/* defines from thin to thick characters. 
+/* Defines from thin to thick characters. 
 400 is the same as normal, and 700 is the same as bold */
-/* defines from thin to thick characters. 
+/* Defines from thin to thick characters. 
 400 is the same as normal, and 700 is the same as bold */
 @font-face {
   font-family: "Glyphicons Regular";
@@ -2990,6 +2990,10 @@ p {
   font-weight: bold;
   line-height: 0.875em; }
 
+.box-content {
+  font-size: 0.875em;
+  text-align: center; }
+
 .display-content {
   padding: 1.25em;
   color: #abaaaa;
@@ -3012,6 +3016,9 @@ small {
 strong {
   color: #02baef;
   font-weight: bold; }
+
+.center {
+  text-align: center; }
 
 .grid-size-1 {
   max-width: 63.75em !important; }
@@ -4645,9 +4652,9 @@ strong {
   margin: 0 0;
   width: 100%; }
 
-/* defines from thin to thick characters. 
+/* Defines from thin to thick characters. 
 400 is the same as normal, and 700 is the same as bold */
-/* defines from thin to thick characters. 
+/* Defines from thin to thick characters. 
 400 is the same as normal, and 700 is the same as bold */
 @font-face {
   font-family: "Glyphicons Regular";
@@ -7595,6 +7602,10 @@ p {
   font-weight: bold;
   line-height: 0.875em; }
 
+.box-content {
+  font-size: 0.875em;
+  text-align: center; }
+
 .display-content {
   padding: 1.25em;
   color: #abaaaa;
@@ -7617,6 +7628,9 @@ small {
 strong {
   color: #02baef;
   font-weight: bold; }
+
+.center {
+  text-align: center; }
 
 /*
  * jQuery FlexSlider v2.2.0
@@ -8299,16 +8313,30 @@ html[xmlns] .slides {
   margin-left: 0;
   margin-right: 0; }
 
-.simple-btn-xxxl, .simple-btn-xxl, .simple-btn-xl, .default-btn, .simple-btn-xs, .simple-btn-xxs, .simple-btn-xxxs {
+.simple-btn-xxxl, .simple-btn-xxl, .simple-btn-xl, .simple-btn, .simple-btn-xs, .simple-btn-xxs, .simple-btn-xxxs {
   display: inline-block;
   background-color: #9563c0;
   opacity: 1;
   transition: opacity .25s ease-in-out;
   text-transform: capitalize;
   text-decoration: none;
-  font-weight: 300; }
-  .simple-btn-xxxl:hover, .simple-btn-xxl:hover, .simple-btn-xl:hover, .default-btn:hover, .simple-btn-xs:hover, .simple-btn-xxs:hover, .simple-btn-xxxs:hover {
-    opacity: .65; }
+  font-weight: 300;
+  outline: none;
+  border: none; }
+  .simple-btn-xxxl:hover, .simple-btn-xxl:hover, .simple-btn-xl:hover, .simple-btn:hover, .simple-btn-xs:hover, .simple-btn-xxs:hover, .simple-btn-xxxs:hover {
+    opacity: .65;
+    cursor: pointer; }
+  .simple-btn-xxxl:active, .simple-btn-xxl:active, .simple-btn-xl:active, .simple-btn:active, .simple-btn-xs:active, .simple-btn-xxs:active, .simple-btn-xxxs:active {
+    opacity: .25; }
+
+.green-success {
+  background-color: #21be21; }
+
+.yellow-warning {
+  background-color: #f0c810; }
+
+.red-error {
+  background-color: #8E0400; }
 
 .btn-radius-all {
   border-radius: 10px;
@@ -8316,13 +8344,13 @@ html[xmlns] .slides {
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px; }
 
-.btn-radius-left-side, .button-groups-rounded a:first-child {
+.btn-radius-left-side, .button-groups-rounded button:first-child {
   border-radius: 10px 0px 0px 10px;
   -ms-border-radius: 10px 0px 0px 10px;
   -moz-border-radius: 10px 0px 0px 10px;
   -webkit-border-radius: 10px 0px 0px 10px; }
 
-.btn-radius-right-side, .button-groups-rounded a:last-child {
+.btn-radius-right-side, .button-groups-rounded button:last-child {
   border-radius: 0px 10px 10px 0px !important;
   -ms-border-radius: 0px 10px 10px 0px !important;
   -moz-border-radius: 0px 10px 10px 0px !important;
@@ -8355,7 +8383,7 @@ html[xmlns] .slides {
   color: #fff;
   font-size: 1.375em; }
 
-.default-btn {
+.simple-btn {
   padding: 12px;
   color: #fff;
   font-size: 1.125em; }
@@ -8375,10 +8403,10 @@ html[xmlns] .slides {
   color: #fff;
   font-size: 0.8125em; }
 
-.button-groups a, .button-groups-rounded a {
+.button-groups button, .button-groups-rounded button {
   float: left;
   border-right: 1px solid #fff; }
-  .button-groups a:last-child, .button-groups-rounded a:last-child {
+  .button-groups button:last-child, .button-groups-rounded button:last-child {
     border: none; }
 
 .glyphicons.wifi:before, .glyphicons.user:before, .glyphicons.calendar:before,
@@ -8394,11 +8422,80 @@ html[xmlns] .slides {
   vertical-align: bottom;
   opacity: .65; }
 
-button {
-  outline: none;
-  border: none; }
-  button:hover {
-    cursor: pointer; }
+.btn-blc {
+  width: 100%;
+  display: block; }
+
+.button-hover-states .auto {
+  cursor: auto; }
+.button-hover-states .default {
+  cursor: default; }
+.button-hover-states .none {
+  cursor: none; }
+.button-hover-states .context-menu {
+  cursor: context-menu; }
+.button-hover-states .help {
+  cursor: help; }
+.button-hover-states .pointer {
+  cursor: pointer; }
+.button-hover-states .progress {
+  cursor: progress; }
+.button-hover-states .wait {
+  cursor: wait; }
+.button-hover-states .cell {
+  cursor: cell; }
+.button-hover-states .crosshair {
+  cursor: crosshair; }
+.button-hover-states .text {
+  cursor: text; }
+.button-hover-states .vertical-text {
+  cursor: vertical-text; }
+.button-hover-states .alias {
+  cursor: alias; }
+.button-hover-states .copy {
+  cursor: copy; }
+.button-hover-states .move {
+  cursor: move; }
+.button-hover-states .no-drop {
+  cursor: no-drop; }
+.button-hover-states .not-allowed {
+  cursor: not-allowed; }
+.button-hover-states .all-scroll {
+  cursor: all-scroll; }
+.button-hover-states .col-resize {
+  cursor: col-resize; }
+.button-hover-states .row-resize {
+  cursor: row-resize; }
+.button-hover-states .n-resize {
+  cursor: n-resize; }
+.button-hover-states .e-resize {
+  cursor: e-resize; }
+.button-hover-states .s-resize {
+  cursor: s-resize; }
+.button-hover-states .w-resize {
+  cursor: w-resize; }
+.button-hover-states .ns-resize {
+  cursor: ns-resize; }
+.button-hover-states .ew-resize {
+  cursor: ew-resize; }
+.button-hover-states .ne-resize {
+  cursor: ne-resize; }
+.button-hover-states .nw-resize {
+  cursor: nw-resize; }
+.button-hover-states .se-resize {
+  cursor: se-resize; }
+.button-hover-states .sw-resize {
+  cursor: sw-resize; }
+.button-hover-states .nesw-resize {
+  cursor: nesw-resize; }
+.button-hover-states .nwse-resize {
+  cursor: nwse-resize; }
+
+button[disabled] {
+  opacity: .15; }
+  button[disabled]:hover {
+    opacity: .15;
+    cursor: not-allowed; }
 
 select {
   background: transparent url("http://localhost:8888/framework/images/down_arrow.png") no-repeat 97% 55%; }
@@ -8484,6 +8581,10 @@ label {
   position: absolute;
   background-image: transparent url("http://localhost:8888/framework/images/down_arrow.png") repeat none top right;
   background-position: -380px -1717px; }
+
+.content-box {
+  padding: 20px;
+  background: #e8e7e7; }
 
 body img {
   max-width: 100%;

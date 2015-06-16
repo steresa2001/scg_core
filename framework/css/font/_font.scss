@@ -108,6 +108,11 @@ p
 	font-weight:$w-bold;
 	line-height:calc-em($grid-p-line-height, $context);
 	}
+.box-content
+	{
+	font-size:calc-em($p-font-size-s, $context);
+	text-align:$align-c;
+	}
 .display-content
 	{
 	padding:calc-em(20px, $context);
@@ -136,4 +141,8 @@ strong
 	{
 	color:$aqua;
 	font-weight:$w-bold;	
+	}
+.center
+	{
+	text-align:$align-c;
 	}

@@ -2,150 +2,180 @@
 
 //---- Start SCSS - CSS ----//
 
+//////////// Start Default Global Button Style ////////////
+
 %global-btn-style
-		{
-		display:$inl-blc;
-		background-color:$purple;
-		opacity:1;
-		transition:opacity .25s ease-in-out;
-		text-transform:capitalize;
-		text-decoration:none;
-		font-weight:$w-300;
+	{
+	display:$inl-blc;
+	background-color:$purple;
+	opacity:1;
+	transition:opacity .25s ease-in-out;
+	text-transform:capitalize;
+	text-decoration:none;
+	font-weight:$w-300;
+	outline:none;
+	border:none;
 	&:hover	 
-			{
-			opacity:.65;
-			}
+		{
+		opacity:.65;
+		cursor:pointer;
 		}
+	&:active
+		{
+		opacity:.25;
+		}
+	}
+
+//////////// End Global Button Style ////////////
+
+//////////// Start Button Colors ////////////
+
+.green-success
+	{
+	background-color: $green-success;
+	}
+
+.yellow-warning
+	{
+	background-color: $yellow-warning;
+	}
+
+.red-error
+	{
+	background-color: $red-error;
+	}
+
+//////////// Start Button Colors ////////////
 
 %btn-radius-all
-		{
-		@include border-radius-all($default-border-radius);
-		}
+	{
+	@include border-radius-all($default-border-radius);
+	}
 
 %btn-radius-left-side
-		{
-		@include border-radius-left-side($default-border-radius, $one-side, $one-side, $default-border-radius);
-		}
+	{
+	@include border-radius-left-side($default-border-radius, $one-side, $one-side, $default-border-radius);
+	}
 
 %btn-radius-right-side
-		{
-		@include border-radius-right-side($one-side, $default-border-radius, $default-border-radius, $one-side);
-		}
+	{
+	@include border-radius-right-side($one-side, $default-border-radius, $default-border-radius, $one-side);
+	}
 
 %btn-radius-top
-		{
-		@include border-radius-top($default-border-radius, $default-border-radius, $one-side, $one-side);
-		}
+	{
+	@include border-radius-top($default-border-radius, $default-border-radius, $one-side, $one-side);
+	}
 
 %btn-radius-bottom
-		{
-		@include border-radius-bottom($one-side, $one-side, $default-border-radius, $default-border-radius);
-		}
+	{
+	@include border-radius-bottom($one-side, $one-side, $default-border-radius, $default-border-radius);
+	}
 
 .btn-radius-all
-		{
-		@extend %btn-radius-all;
-		}
+	{
+	@extend %btn-radius-all;
+	}
 
 .btn-radius-left-side
-		{
-		@extend %btn-radius-left-side;
-		}
+	{
+	@extend %btn-radius-left-side;
+	}
 
 .btn-radius-right-side
-		{
-		@extend %btn-radius-right-side;
-		}
+	{
+	@extend %btn-radius-right-side;
+	}
 
 .btn-radius-top
-		{
-		@extend %btn-radius-top
-		}
+	{
+	@extend %btn-radius-top;
+	}
 
 .btn-radius-bottom
-		{
-		@extend %btn-radius-bottom
-		}
+	{
+	@extend %btn-radius-bottom;
+	}
 
 .simple-btn-xxxl 	
-		{
-		padding:$xxxl-btn-p;
-		color:$white;
-		font-size:calc-em($xxxl-btn-font-size, $context);
-		@extend %global-btn-style;
-		}
+	{
+	padding:$xxxl-btn-p;
+	color:$white;
+	font-size:calc-em($xxxl-btn-font-size, $context);
+	@extend %global-btn-style;
+	}
 .simple-btn-xxl 	
-		{
-		padding:$xxl-btn-p;
-		color:$white;
-		font-size:calc-em($xxl-btn-font-size, $context);
-		@extend %global-btn-style;
-		}
+	{
+	padding:$xxl-btn-p;
+	color:$white;
+	font-size:calc-em($xxl-btn-font-size, $context);
+	@extend %global-btn-style;
+	}
 .simple-btn-xl 	
-		{
-		padding:$xl-btn-p;
-		color:$white;
-		font-size:calc-em($xl-btn-font-size, $context);
-		@extend %global-btn-style;
-		}
-.default-btn 	
-		{
-		padding:$default-btn-p;
-		color:$white;
-		font-size:calc-em($default-btn-font-size, $context);
-		@extend %global-btn-style;
-		}
+	{
+	padding:$xl-btn-p;
+	color:$white;
+	font-size:calc-em($xl-btn-font-size, $context);
+	@extend %global-btn-style;
+	}
+.simple-btn	
+	{
+	padding:$default-btn-p;
+	color:$white;
+	font-size:calc-em($default-btn-font-size, $context);
+	@extend %global-btn-style;
+	}
 .simple-btn-xs 	
-		{
-		padding:$xs-btn-p;
-		color:$white;
-		font-size:calc-em($xs-btn-font-size, $context);
-		@extend %global-btn-style;
-		}
+	{
+	padding:$xs-btn-p;
+	color:$white;
+	font-size:calc-em($xs-btn-font-size, $context);
+	@extend %global-btn-style;
+	}
 .simple-btn-xxs 	
-		{
-		padding:$xxs-btn-p;
-		color:$white;
-		font-size:calc-em($xxs-btn-font-size, $context);
-		@extend %global-btn-style;
-		}
+	{
+	padding:$xxs-btn-p;
+	color:$white;
+	font-size:calc-em($xxs-btn-font-size, $context);
+	@extend %global-btn-style;
+	}
 .simple-btn-xxxs 	
-		{
-		padding:$xxxs-btn-p;
-		color:$white;
-		font-size:calc-em($xxxs-btn-font-size, $context);
-		@extend %global-btn-style;
-		}
+	{
+	padding:$xxxs-btn-p;
+	color:$white;
+	font-size:calc-em($xxxs-btn-font-size, $context);
+	@extend %global-btn-style;
+	}
 %button-group-style
+	{
+	button 		
 		{
-	a 		
-			{
-			float:left;
-			border-right:1px $b-solid $white;
+		float:left;
+		border-right:1px $b-solid $white;
 		&:last-child
 				{
 				border:none;
 				}
-			}	
-		}
+		}	
+	}
 .button-groups
-		{
-		@extend %button-group-style; 	
-		}
+	{
+	@extend %button-group-style; 	
+	}
 .button-groups-rounded
+	{
+	@extend %button-group-style; 
+	button:first-child
 		{
-		@extend %button-group-style; 
-	a:first-child
-			{
-			@extend %btn-radius-left-side;	
-			}
-	a:last-child
-			{
-			@extend %btn-radius-right-side;	
-			}	
+		@extend %btn-radius-left-side;	
 		}
+	button:last-child
+		{
+		@extend %btn-radius-right-side;	
+		}	
+	}
 
-//---- Start Buttons With Icons----//
+//////////// Start Buttons With Icons ////////////
 
 .glyphicons.wifi:before, .glyphicons.user:before, .glyphicons.calendar:before, 
 .glyphicons.chat:before, .glyphicons.charts:before, .glyphicons.lock:before,
@@ -163,17 +193,167 @@
  	opacity:.65;
  	}
 
-//---- End Buttons With Icons----//
+//////////// End Buttons With Icons ////////////
 
-button 	
+//////////// Start Full Width Buttons ////////////
+
+.btn-blc
 	{
-	outline:none;
-	border:none;
-	&:hover 
-		{
-		cursor:pointer;
+	width:$width-100;
+	display:$blc;
+	}
+//////////// End Full Width Buttons ////////////
+
+//////////// Start Button Hover States ////////////
+
+.button-hover-states
+	{
+	.auto
+		{ 
+		cursor:auto;
+		}
+	.default
+		{ 
+		cursor:default; 
+		}
+	.none            
+		{ 
+		cursor:none; 
+		}
+	.context-menu    
+		{ 
+		cursor:context-menu; 
+		}
+	.help            
+		{ 
+		cursor:help; 
+		}
+	.pointer         
+		{ 
+		cursor:pointer; 
+		}
+	.progress        
+		{ 
+		cursor:progress; 
+		}
+	.wait            
+		{ 
+		cursor:wait; 
+		}
+	.cell            
+		{ 
+		cursor:cell; 
+		}
+	.crosshair       
+		{ 
+		cursor:crosshair; 
+		}
+	.text           
+		{ 
+		cursor:text; 
+		}
+	.vertical-text   
+		{ 
+		cursor:vertical-text; 
+		}
+	.alias           
+		{ 
+		cursor:alias; 
+		}
+	.copy            
+		{ 
+		cursor:copy; 
+		}
+	.move            
+		{ 
+		cursor:move; 
+		}
+	.no-drop         
+		{ 
+		cursor:no-drop; 
+		}
+	.not-allowed     
+		{ 
+		cursor:not-allowed; 
+		}
+	.all-scroll      
+		{ 
+		cursor:all-scroll; 
+		}
+	.col-resize      
+		{ 
+		cursor:col-resize; 
+		}
+	.row-resize      
+		{ 
+		cursor:row-resize; 
+		}
+	.n-resize        
+		{ 
+		cursor:n-resize; 
+		}
+	.e-resize        
+		{ 
+		cursor:e-resize; 
+		}
+	.s-resize        
+		{ 
+		cursor:s-resize; 
+		}
+	.w-resize        
+		{ 
+		cursor:w-resize; 
+		}
+	.ns-resize       
+		{ 
+		cursor:ns-resize; 
+		}
+	.ew-resize       
+		{ 
+		cursor:ew-resize; 
+		}
+	.ne-resize       
+		{ 
+		cursor:ne-resize; 
+		}
+	.nw-resize       
+		{ 
+		cursor:nw-resize; 
+		}
+	.se-resize       
+		{ 
+		cursor:se-resize; 
+		}
+	.sw-resize       
+		{ 
+		cursor:sw-resize; 
+		}
+	.nesw-resize     
+		{ 
+		cursor:nesw-resize; 
+		}
+	.nwse-resize     
+		{ 
+		cursor:nwse-resize; 
 		}
 	}
+
+//////////// End Button Hover States ////////////
+
+//////////// Start Disabled Button Styles ////////////
+
+button[disabled]
+	{
+	opacity:.15;
+	&:hover
+		{
+		opacity:.15;
+		cursor: not-allowed;
+		}
+	}
+
+//////////// End Disabled Button Styles ////////////
+
 //---- End SCSS - CSS ----//
 
 

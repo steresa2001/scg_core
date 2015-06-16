@@ -62,7 +62,9 @@
 			$orange:#fdbb44;
 			$aqua:#02baef;
 			$slate:#94a9b9;
-			$default-btn:#3293c0;
+			$green-success:#21be21;
+			$yellow-warning:#f0c810;
+			$red-error:#8E0400;
 
 		//++++++++++++++++++++++++++++ Font Family ++++++++++++++++++++++++++++//
 
@@ -120,6 +122,7 @@
 			
 			//%%%%%% Font Size %%%%%%//
 			$p-font-size:18px;
+			$p-font-size-s:14px;
 
 			//%%%%%% Colors %%%%%%//
 			$p-color:#8a8a8a;
@@ -141,7 +144,7 @@
 			$w-bolder:bolder;																//**** $bolder ****// (sets the font weight even bolder)
 			$w-lighter:lighter;																//**** $bolder ****// (sets the font weight to light)
 
-			/* defines from thin to thick characters. 
+			/* Defines from thin to thick characters. 
 			400 is the same as normal, and 700 is the same as bold */
 			$w-100:100;																	
 			$w-200:200;
@@ -238,7 +241,7 @@
 
 		//++++++++++++++++++++++++++++ Widths ++++++++++++++++++++++++++++//
 
-			
+			$width-100:100%;																//**** $width-100 ****// (sets the width to 100%)			
 
 //---- End Layout Variables ----//
 
