@@ -17,6 +17,10 @@ h1, h2, h3, h4, h5, h6
 	line-height:$heading-line-height;
 	text-transform:capitalize;
 	}
+h2, h3
+	{
+	font-family:$oxygen;
+	}
 h1
 	{
 	color:$pinkish;
@@ -29,14 +33,12 @@ h2
 	{
 	color:$cyan;
 	font-size:calc-em($heading2-size, $context);
-	font-family:$oxygen;
 	font-style:$w-normal;
 	font-weight:$w-300;	
 	}
 h3
 	{
 	color:$blue;
-	font-family:$oxygen;
 	font-size:calc-em($heading3-size, $context);
 	}
 h4 
@@ -46,27 +48,26 @@ h4
 	}
 h5 
 	{
-	color:$violet;
+	color:$orange;
 	font-size:calc-em($heading5-size, $context);	
 	}
 h6 
 	{
-	color:$orange;
+	color:$violet;
 	font-size:calc-em($heading6-size, $context);	
 	}
-%sub-head
+%subheading-h1
 	{
-	padding-top:calc-em(5px, $context);
 	font-family:$raleway;
-	color:$default-sub-heading-color;
+	color:$default-subheading-h1ing-color;
 	display:$blc;
-	line-height:calc-em($default-sub-heading-line-height, $context);
+	line-height:calc-em($default-subheading-h1ing-line-height, $context);
 	}
-.sub-head-large
+.subheading-h1
 	{
-	@extend %sub-head;
+	@extend %subheading-h1;
 	font-family:$raleway;
-	font-size:calc-em($sub-heading-large, $context);	
+	font-size:calc-em($subheading-h1ing-large, $context);	
 	}
 .no-style
 	{
@@ -137,7 +138,7 @@ small
 	color:$small-color;
 	letter-spacing:$small-size-leading;
 	}
-strong 
+.highlight
 	{
 	color:$aqua;
 	font-weight:$w-bold;	

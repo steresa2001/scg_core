@@ -14,7 +14,7 @@
 		<section>
 			<div class="row">
 				<h1>Ready To Get Your Hands Dirty?</h1>
-				<span class="sub-head-large">The Notevole Framework is very simple to use. Whether you're a master developer or just starting out, you'll be up and running in no time.</span>
+				<span class="subheading-h1">The Notevole Framework is very simple to use. Whether you're a master developer or just starting out, you'll be up and running in no time.</span>
 			</div>
 		</section>
 		

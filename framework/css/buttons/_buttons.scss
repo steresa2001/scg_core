@@ -7,7 +7,6 @@
 %global-btn-style
 	{
 	display:$inl-blc;
-	background-color:$purple;
 	opacity:1;
 	transition:opacity .25s ease-in-out;
 	text-transform:capitalize;
@@ -29,6 +28,11 @@
 //////////// End Global Button Style ////////////
 
 //////////// Start Button Colors ////////////
+
+.primary-purple
+	{
+	background-color: $primary-purple;
+	}
 
 .green-success
 	{

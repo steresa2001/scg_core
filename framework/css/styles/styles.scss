@@ -204,21 +204,24 @@ header 	{
 		-moz-box-sizing:$border-box;
 	ul 		{
 			margin:calc-em(30px, $context);
-		li  	{
+		li  		{
 				padding:calc-em(6px, $context) 0;
 			a 		{
-					font-size:calc-em(16px, $context);
+					font-size:calc-em(15px, $context);
 					color:#90d5e7;
 					text-decoration:none;
 					font-weight:$w-normal;
 			&:hover 	{
-						font-weight:$w-bold;
+						padding-left:calc-em(4px, $context);
+						}
+			&:visited 	{
+						color:$default-links-visited-color;
 						}
 					}
 				}
 			.section
 				{
-				font-size:calc-em(20px, $context);
+				font-size:calc-em(18px, $context);
 				color:$aqua;
 				font-weight:$w-bold;	
 				}
