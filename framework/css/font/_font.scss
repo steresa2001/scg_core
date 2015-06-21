@@ -16,6 +16,11 @@ h1, h2, h3, h4, h5, h6
 	padding:0;
 	line-height:$heading-line-height;
 	text-transform:capitalize;
+	small 
+		{
+		padding: 0;
+		font-size: 60%;
+		}
 	}
 h2, h3
 	{
@@ -71,10 +76,9 @@ h6
 	}
 .no-style
 	{
-	h1, h2, h3, h4, h5, h6 
+	h1, h2, h3, h4, h5, h6, p
 		{
 		color:$black;
-		text-transform:initial;
 		}	
 	}
 p
@@ -131,13 +135,6 @@ a
 		text-transform:capitalize;
 		}
 	}
-small
-	{
-	padding-left:$small-left-padding;
-	font-size:$small-size;
-	color:$small-color;
-	letter-spacing:$small-size-leading;
-	}
 .highlight
 	{
 	color:$aqua;
@@ -146,4 +143,41 @@ small
 .center
 	{
 	text-align:$align-c;
+	}
+ol, ul
+	{
+	margin-left:20px;
+	padding:4px 0;
+	li 
+		{
+		padding:3px 0;
+		}
+	}
+.styled-list-circle
+	{
+	list-style-type:circle;
+	}
+.styled-list-square
+	{
+	list-style-type:square;
+	}
+.styled-list-lower-alpha
+	{
+	list-style-type:lower-alpha;
+	}
+.styled-list-upper-alpha
+	{
+	list-style-type:upper-alpha;
+	}
+.styled-list-lower-roman
+	{
+	list-style-type:lower-roman;
+	}
+.styled-list-upper-roman
+	{
+	list-style-type:upper-roman;
+	}
+.unstyled-list
+	{
+	list-style:none;
 	}

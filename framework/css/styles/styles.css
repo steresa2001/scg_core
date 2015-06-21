@@ -25,9 +25,6 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1; }
 
-ol, ul {
-  list-style: none; }
-
 blockquote, q {
   quotes: none; }
 
@@ -2916,6 +2913,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: 1.4;
   text-transform: capitalize; }
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    padding: 0;
+    font-size: 60%; }
 
 h2, h3 {
   font-family: "Oxygen", sans-serif; }
@@ -2959,12 +2959,11 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-size: 1.5em; }
 
-.no-style h1, .no-style h2, .no-style h3, .no-style h4, .no-style h5, .no-style h6 {
-  color: #000;
-  text-transform: initial; }
+.no-style h1, .no-style h2, .no-style h3, .no-style h4, .no-style h5, .no-style h6, .no-style p {
+  color: #000; }
 
 p {
-  padding-bottom: 0.625em;
+  padding-bottom: 1em;
   font-family: "Maven Pro", sans-serif;
   font-size: 1.125em;
   color: #8a8a8a;
@@ -3007,18 +3006,39 @@ a {
   a:visited {
     text-transform: capitalize; }
 
-small {
-  padding-left: 20px;
-  font-size: 12px;
-  color: #6c6c6c;
-  letter-spacing: 4px; }
-
 .highlight {
   color: #02baef;
   font-weight: bold; }
 
 .center {
   text-align: center; }
+
+ol, ul {
+  margin-left: 20px;
+  padding: 4px 0; }
+  ol li, ul li {
+    padding: 3px 0; }
+
+.styled-list-circle {
+  list-style-type: circle; }
+
+.styled-list-square {
+  list-style-type: square; }
+
+.styled-list-lower-alpha {
+  list-style-type: lower-alpha; }
+
+.styled-list-upper-alpha {
+  list-style-type: upper-alpha; }
+
+.styled-list-lower-roman {
+  list-style-type: lower-roman; }
+
+.styled-list-upper-roman {
+  list-style-type: upper-roman; }
+
+.unstyled-list {
+  list-style: none; }
 
 .grid-size-1 {
   max-width: 63.75em !important; }
@@ -7528,6 +7548,9 @@ h1, h2, h3, h4, h5, h6 {
   padding: 0;
   line-height: 1.4;
   text-transform: capitalize; }
+  h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+    padding: 0;
+    font-size: 60%; }
 
 h2, h3 {
   font-family: "Oxygen", sans-serif; }
@@ -7571,12 +7594,11 @@ h6 {
   font-family: "Raleway", sans-serif;
   font-size: 1.5em; }
 
-.no-style h1, .no-style h2, .no-style h3, .no-style h4, .no-style h5, .no-style h6 {
-  color: #000;
-  text-transform: initial; }
+.no-style h1, .no-style h2, .no-style h3, .no-style h4, .no-style h5, .no-style h6, .no-style p {
+  color: #000; }
 
 p {
-  padding-bottom: 0.625em;
+  padding-bottom: 1em;
   font-family: "Maven Pro", sans-serif;
   font-size: 1.125em;
   color: #8a8a8a;
@@ -7619,18 +7641,39 @@ a {
   a:visited {
     text-transform: capitalize; }
 
-small {
-  padding-left: 20px;
-  font-size: 12px;
-  color: #6c6c6c;
-  letter-spacing: 4px; }
-
 .highlight {
   color: #02baef;
   font-weight: bold; }
 
 .center {
   text-align: center; }
+
+ol, ul {
+  margin-left: 20px;
+  padding: 4px 0; }
+  ol li, ul li {
+    padding: 3px 0; }
+
+.styled-list-circle {
+  list-style-type: circle; }
+
+.styled-list-square {
+  list-style-type: square; }
+
+.styled-list-lower-alpha {
+  list-style-type: lower-alpha; }
+
+.styled-list-upper-alpha {
+  list-style-type: upper-alpha; }
+
+.styled-list-lower-roman {
+  list-style-type: lower-roman; }
+
+.styled-list-upper-roman {
+  list-style-type: upper-roman; }
+
+.unstyled-list {
+  list-style: none; }
 
 /*
  * jQuery FlexSlider v2.2.0
@@ -8699,7 +8742,9 @@ header {
   box-sizing: border-box;
   -moz-box-sizing: border-box; }
   .sidebar ul {
-    margin: 1.875em; }
+    margin: 1.875em;
+    padding: 0;
+    list-style: none; }
     .sidebar ul li {
       padding: 0.375em 0; }
       .sidebar ul li a {
@@ -8727,5 +8772,8 @@ footer {
 
 .pos-rel {
   position: relative; }
+
+.block {
+  display: block; }
 
 /*# sourceMappingURL=styles.css.map */

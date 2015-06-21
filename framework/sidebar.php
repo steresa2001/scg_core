@@ -21,6 +21,7 @@
 			<ul>
 				<li><a class="section" href="#">Content</a></li>
 				<li><a href="#">Headings</a></li>
+				<li><a href="#">Subheadings</a></li>
 				<li><a href="#">Paragraphs</a></li>
 				<li><a href="#">Lists</a></li>
 				<li><a href="#">Tables</a></li>

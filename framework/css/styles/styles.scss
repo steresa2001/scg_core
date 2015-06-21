@@ -204,6 +204,8 @@ header 	{
 		-moz-box-sizing:$border-box;
 	ul 		{
 			margin:calc-em(30px, $context);
+			padding: 0;
+			list-style:none;
 		li  		{
 				padding:calc-em(6px, $context) 0;
 			a 		{
@@ -251,6 +253,10 @@ footer 	{
 .pos-rel 
 		{
 		position:$pos-rel;
+		}
+.block
+		{
+		display: $blc;	
 		}
 
 //////////// End Misc - CSS ////////////

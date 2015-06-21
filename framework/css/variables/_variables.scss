@@ -118,7 +118,7 @@
 		//++++++++++++++++++++++++++++ Paragraphs ++++++++++++++++++++++++++++//
 			
 			//%%%%%% Padding %%%%%%//
-			$p-padding:10px;
+			$p-padding:16px;
 
 			//%%%%%% Font Family %%%%%%//
 			$p-font-family:"soleil",sans-serif;
@@ -211,13 +211,6 @@
 
 		//++++++++++++++++++++++++++++ Misc ++++++++++++++++++++++++++++//
 		
-			//%%%%%% <small> Tag %%%%%%//
-			$small-left-padding:20px;															//**** $small-left-padding ****// (sets the left padding size for all small elements)
-			$small-size:12px;																	//**** $small-size ****// (sets the size for all small elements)
-			$small-color:#6c6c6c;																//**** $small-size-color ****// (sets the color for all small elements)
-			$small-size-leading:4px;															//**** $small-size-leading ****// (sets the leading size for all small elements)
-			$small-text-indent:20px;															//**** $small-text-indent ****// (sets the text indent size for all small elements)
-
 			//%%%%%% Showcase %%%%%%//
 			$showcase-bgcolor:#1e1e1e;														//**** $showcase-bgcolor ****// (sets the background color for showcase wrapper)
 			$showcase-p-padding:20px 20px;												//**** $showcase-p-padding ****// (sets the paragraph padding for showcase wrapper)
