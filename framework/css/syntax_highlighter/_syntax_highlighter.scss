@@ -19,7 +19,7 @@
 
 .syntaxhighlighter
   {
-  font-family:Helvetica, sans-serif !important;
+  font-family:Helvetica, sans-serif;
   border:1px $b-solid #0183b3;
   background:#f8f8f8;
   }
@@ -63,8 +63,8 @@
 
 .comments
   {
-  font-size:14px;
-  color:#b1b0b0;
+  font-size:12px;
+  color:#d0cece;
   display:inline-block;
   font-style:italic;
   }

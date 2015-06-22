@@ -3013,10 +3013,10 @@ a {
 .center {
   text-align: center; }
 
-ol, ul {
+.no-style ol, .no-style ul {
   margin-left: 20px;
   padding: 4px 0; }
-  ol li, ul li {
+  .no-style ol li, .no-style ul li {
     padding: 3px 0; }
 
 .styled-list-circle {
@@ -3039,6 +3039,18 @@ ol, ul {
 
 .unstyled-list {
   list-style: none; }
+
+.left-aligned {
+  text-align: left; }
+
+.right-aligned {
+  text-align: right; }
+
+.centered-aligned {
+  text-align: center; }
+
+.justified {
+  text-align: justify; }
 
 .grid-size-1 {
   max-width: 63.75em !important; }
@@ -7648,10 +7660,10 @@ a {
 .center {
   text-align: center; }
 
-ol, ul {
+.no-style ol, .no-style ul {
   margin-left: 20px;
   padding: 4px 0; }
-  ol li, ul li {
+  .no-style ol li, .no-style ul li {
     padding: 3px 0; }
 
 .styled-list-circle {
@@ -7674,6 +7686,18 @@ ol, ul {
 
 .unstyled-list {
   list-style: none; }
+
+.left-aligned {
+  text-align: left; }
+
+.right-aligned {
+  text-align: right; }
+
+.centered-aligned {
+  text-align: center; }
+
+.justified {
+  text-align: justify; }
 
 /*
  * jQuery FlexSlider v2.2.0
@@ -7920,7 +7944,7 @@ html[xmlns] .slides {
  * Dual licensed under the MIT and GPL licenses.
  */
 .syntaxhighlighter {
-  font-family: Helvetica, sans-serif !important;
+  font-family: Helvetica, sans-serif;
   border: 1px solid #0183b3;
   background: #f8f8f8; }
 
@@ -7950,8 +7974,8 @@ html[xmlns] .slides {
   color: #8bc402; }
 
 .comments {
-  font-size: 14px;
-  color: #b1b0b0;
+  font-size: 12px;
+  color: #d0cece;
   display: inline-block;
   font-style: italic; }
 
@@ -8651,22 +8675,24 @@ header {
     border-bottom: 0.125em solid #313131; }
     header nav .logo a img {
       margin: -0.5625em 0 0 0.25em; }
-    header nav ul li {
-      margin-top: -1.25em;
-      padding: 1.3125em 0.75em;
-      border-left: 1px solid #262626;
-      border-right: 1px solid #262626;
-      float: left; }
-      header nav ul li:hover {
+    header nav ul {
+      list-style: none; }
+      header nav ul li {
+        margin-top: -1.25em;
+        padding: 1.3125em 0.75em;
+        border-left: 1px solid #262626;
+        border-right: 1px solid #262626;
+        float: left; }
+        header nav ul li:hover {
+          background: #000; }
+        header nav ul li a {
+          padding: 1.3125em 0;
+          font-family: "Maven Pro", sans-serif;
+          font-size: 1.125em;
+          color: #fdbb44;
+          text-decoration: none; }
+      header nav ul li.active {
         background: #000; }
-      header nav ul li a {
-        padding: 1.3125em 0;
-        font-family: "Maven Pro", sans-serif;
-        font-size: 1.125em;
-        color: #fdbb44;
-        text-decoration: none; }
-    header nav ul li.active {
-      background: #000; }
   header .callout {
     margin-top: 1.25em; }
     header .callout p {

@@ -144,13 +144,16 @@ a
 	{
 	text-align:$align-c;
 	}
-ol, ul
+.no-style
 	{
-	margin-left:20px;
-	padding:4px 0;
-	li 
+	ol, ul
 		{
-		padding:3px 0;
+		margin-left:20px;
+		padding:4px 0;
+		li 
+			{
+			padding:3px 0;
+			}
 		}
 	}
 .styled-list-circle
@@ -180,4 +183,20 @@ ol, ul
 .unstyled-list
 	{
 	list-style:none;
+	}
+.left-aligned
+	{
+	text-align:$align-l;
+	}
+.right-aligned
+	{
+	text-align:$align-r;
+	}
+.centered-aligned
+	{
+	text-align:$align-c;
+	}
+.justified
+	{
+	text-align:$align-j;
 	}

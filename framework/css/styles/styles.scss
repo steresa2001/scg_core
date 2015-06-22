@@ -49,6 +49,7 @@ header 	{
 					}
 				}
 			ul 	{
+				list-style:none;
 				li 	{
 					margin-top:calc-em(-20px, $context);
 					padding:calc-em(21px, $context) calc-em(12px, $context);
