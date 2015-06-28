@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -2911,19 +2912,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
   line-height: 1.4;
   text-transform: capitalize; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     padding: 0;
-    font-size: 60%; }
-
-h2, h3 {
-  font-family: "Oxygen", sans-serif; }
+    font-size: 68%;
+    color: #abaaaa;
+    display: block; }
 
 h1 {
   color: #c062aa;
-  font-size: 3em;
-  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.875em;
   font-style: normal;
   font-weight: 400; }
 
@@ -2949,17 +2949,7 @@ h6 {
   color: #54368f;
   font-size: 0.875em; }
 
-.subheading-h1 {
-  font-family: "Raleway", sans-serif;
-  color: #b2b1b1;
-  display: block;
-  line-height: 1.25em; }
-
-.subheading-h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5em; }
-
-.no-style h1, .no-style h2, .no-style h3, .no-style h4, .no-style h5, .no-style h6, .no-style p {
+.no-style h1, .no-style h2, .no-style h3, .no-style h4, .no-style h5, .no-style h6, .no-style p, .no-style small {
   color: #000; }
 
 p {
@@ -3051,6 +3041,25 @@ a {
 
 .justified {
   text-align: justify; }
+
+blockquote {
+  padding: 20px 20px 55px;
+  font-size: 14px;
+  color: #aeaeae;
+  background-color: #fcfcfc;
+  border: 1px solid #f3f3f3;
+  line-height: 18px;
+  overflow: auto; }
+
+cite {
+  float: right;
+  bottom: -30px;
+  position: relative;
+  font-weight: bolder; }
+
+cite:before {
+  margin-right: 0.375em;
+  content: '—'; }
 
 .grid-size-1 {
   max-width: 63.75em !important; }
@@ -7558,19 +7567,18 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
   padding: 0;
+  font-family: "Roboto Condensed", sans-serif;
   line-height: 1.4;
   text-transform: capitalize; }
   h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
     padding: 0;
-    font-size: 60%; }
-
-h2, h3 {
-  font-family: "Oxygen", sans-serif; }
+    font-size: 68%;
+    color: #abaaaa;
+    display: block; }
 
 h1 {
   color: #c062aa;
-  font-size: 3em;
-  font-family: "Roboto Condensed", sans-serif;
+  font-size: 2.875em;
   font-style: normal;
   font-weight: 400; }
 
@@ -7596,17 +7604,7 @@ h6 {
   color: #54368f;
   font-size: 0.875em; }
 
-.subheading-h1 {
-  font-family: "Raleway", sans-serif;
-  color: #b2b1b1;
-  display: block;
-  line-height: 1.25em; }
-
-.subheading-h1 {
-  font-family: "Raleway", sans-serif;
-  font-size: 1.5em; }
-
-.no-style h1, .no-style h2, .no-style h3, .no-style h4, .no-style h5, .no-style h6, .no-style p {
+.no-style h1, .no-style h2, .no-style h3, .no-style h4, .no-style h5, .no-style h6, .no-style p, .no-style small {
   color: #000; }
 
 p {
@@ -7698,6 +7696,25 @@ a {
 
 .justified {
   text-align: justify; }
+
+blockquote {
+  padding: 20px 20px 55px;
+  font-size: 14px;
+  color: #aeaeae;
+  background-color: #fcfcfc;
+  border: 1px solid #f3f3f3;
+  line-height: 18px;
+  overflow: auto; }
+
+cite {
+  float: right;
+  bottom: -30px;
+  position: relative;
+  font-weight: bolder; }
+
+cite:before {
+  margin-right: 0.375em;
+  content: '—'; }
 
 /*
  * jQuery FlexSlider v2.2.0
@@ -8654,6 +8671,17 @@ label {
 .content-box {
   padding: 20px;
   background: #e8e7e7; }
+
+table {
+  width: 100%;
+  border: 1px solid #000;
+  text-align: left; }
+  table thead {
+    background-color: #ccc; }
+    table thead th {
+      padding: 10px; }
+  table td {
+    padding: 10px; }
 
 body img {
   max-width: 100%;

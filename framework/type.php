@@ -62,7 +62,7 @@
 				<div class="row no-style">
 					<h1>Everyone has a favorite saying: <small>Mine is Cowabunga</small></h1>
 					<h2>Odd question: <small>Do you like penicillin on your pizza?</small></h2>
-					<h3>People see strange things: <small class="block">Looked like sort of a big turtle, in a trench coat.</small></h3>
+					<h3>People see strange things: <small>Looked like sort of a big turtle, in a trench coat</small></h3>
 				</div>
 
 				<div class="row">
@@ -260,6 +260,80 @@
 							</li>
 						</ol>
 					]]></script>
+				</div>
+			</section>
+
+			<section>
+				<div class="row">
+					<h2>Blockquotes</h2>
+					<div class="showcase">
+						<p>Sometimes you just really want to express your thoughts but might not know exactly how or what to say. You never can go wrong using a quote from someone else.</p>
+					</div>
+				</div>
+				
+				<div class="ctn-12">
+					<blockquote>
+						The scientists of today think deeply instead of clearly. One must be sane to think clearly, but one can think deeply and be quite insane.
+						<cite>Nikola Tesla</cite>
+					</blockquote>
+				</div>
+
+				<div class="ctn-12">
+					<blockquote>
+						Nature is the source of all true knowledge. She has her own logic, her own laws, she has no effect without cause nor invention without necessity.
+						<cite>Leonardo da Vinci</cite>
+					</blockquote>
+				</div>
+
+				<div class="row">
+					<script type="syntaxhighlighter" class="brush: js ctns-24"><![CDATA[
+						<blockquote>
+							/*The scientists of today think deeply instead of clearly. One must be sane to think clearly, but one can think deeply and be quite insane.*/
+							<cite>/*Nikola Tesla*/</cite>
+						</blockquote>
+					]]></script>
+				</div>
+			</section>
+
+			<section>
+				<div class="row">
+					<h2>Tables</h2>
+					<div class="showcase">
+						<p>In the past, tables were used to build everything for the web. Today, the div element has happly replaced tables. However, tables are still the way to go for displaying tabular data.</p>
+					</div>
+				</div>
+
+				<div class="row no-style">
+					<table>
+						<thead>
+							<tr>
+								<th>Heading</th>
+								<th>Heading</th>
+								<th>Heading</th>
+								<th>Heading</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Some content</td>
+								<td>Some content</td>
+								<td>Some content</td>
+								<td>Some content</td>
+							</tr>
+							<tr>
+								<td>Some very very very long content</td>
+								<td>Some very very very long content</td>
+								<td>Some very very very long content</td>
+								<td>Some very very very long content</td>
+							</tr>
+							<tr>
+								<td>Some content</td>
+								<td>Some content</td>
+								<td>Some content</td>
+								<td>Some content</td>
+							</tr>
+						</tbody>
+					</table>
 				</div>
 			</section>
 

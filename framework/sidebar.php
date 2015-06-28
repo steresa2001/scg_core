@@ -24,8 +24,8 @@
 				<li><a href="#">Subheadings</a></li>
 				<li><a href="#">Paragraphs</a></li>
 				<li><a href="#">Lists</a></li>
+				<li><a href="#">Blockquotes</a></li>
 				<li><a href="#">Tables</a></li>
-				<li><a href="#">Block Quotes</a></li>
 				<li><a href="#">Tabs</a></li>
 			</ul>
 			

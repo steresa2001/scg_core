@@ -68,14 +68,18 @@
 			$green-success:#21be21;
 			$yellow-warning:#f0c810;
 			$red-error:#8e0400;
+			
+			//%%%%%% Blockquote Colors %%%%%%//
+			$blockquote-font-color:#aeaeae;
+			$blockquote-bg-color:#fcfcfc;
+			$blockquote-border-color:#f3f3f3;
 
 		//++++++++++++++++++++++++++++ Font Family ++++++++++++++++++++++++++++//
 
 			//%%%%%% Font Family %%%%%%//						
 			$robotoCondensed:'Roboto Condensed', sans-serif;								//**** $robotoCondensed: ****// (sets the font family for all h1's)
 			$oxygen:'Oxygen', sans-serif;														//**** $oxygen: ****// (sets the font family for all h2's)
-			$raleway:'Raleway', sans-serif;													//**** $raleway: ****// (sets the font family for all subheading-h1ings)
-			$mavenPro:'Maven Pro', sans-serif;												//**** $mavenPro: ****// (sets the font family for all paragraphs)
+			$mavenPro:'Maven Pro', sans-serif;												//**** $mavenPro: ****// (sets the font family for the body)
 			$glyphicons:'Glyphicons Regular';												//**** $glyphicons: ****// (sets the font family for glyphicons)
 
 		//++++++++++++++++++++++++++++ Headings ++++++++++++++++++++++++++++//
@@ -84,7 +88,7 @@
 			$context:16px;																	//**** $context ****// (sets the base size for your px's)
 
 
-			$heading1-size:48px;																//**** $heading1-size ****// (sets the size for all h1's)
+			$heading1-size:46px;																//**** $heading1-size ****// (sets the size for all h1's)
 			$heading2-size:40px;																//**** $heading2-size ****// (sets the size for all h2's)
 			$heading3-size:30px;																//**** $heading3-size ****// (sets the size for all h3's)
 			$heading4-size:22px;																//**** $heading4-size ****// (sets the size for all h4's)
@@ -101,27 +105,10 @@
 			//%%%%%% Line Height %%%%%%//
 			$heading-line-height:1.4; 															//**** $heading-line-height ****// (sets the line height for all headings)
 		
-		//++++++++++++++++++++++++++++ subheading-h1ings ++++++++++++++++++++++++++++//
-			
-			//%%%%%% Sizes %%%%%%//
-			$subheading-h1ing-large:24px;															//**** $subheading-h1ing-large ****// (sets the size for a large subheading-h1ing)
-
-			//%%%%%% Paddings %%%%%%//
-			$default-subheading-h1ing-padding:5px;												//**** $default-subheading-h1ing-padding ****// (sets the default padding for all subheading-h1ings)
-
-			//%%%%%% Colors %%%%%%//
-			$default-subheading-h1ing-color:#b2b1b1;											//**** $default-subheading-h1ing-color ****// (sets the default color for all subheading-h1ings)
-	
-			//%%%%%% Line Height %%%%%%//
-			$default-subheading-h1ing-line-height:20px; 											//**** $default-subheading-h1ing-line-height ****// (sets the default line height for all subheading-h1ings)
-
 		//++++++++++++++++++++++++++++ Paragraphs ++++++++++++++++++++++++++++//
 			
 			//%%%%%% Padding %%%%%%//
 			$p-padding:16px;
-
-			//%%%%%% Font Family %%%%%%//
-			$p-font-family:"soleil",sans-serif;
 			
 			//%%%%%% Font Size %%%%%%//
 			$p-font-size:18px;
@@ -134,6 +121,16 @@
 			//%%%%%% Line Height %%%%%%//
 			$p-line-height:22px;
 			$grid-p-line-height:14px;
+
+		//++++++++++++++++++++++++++++ Blockquotes ++++++++++++++++++++++++++++//
+
+		$blockquote-padding:20px 20px 55px;
+		$blockquote-font-size:14px;
+		$blockquote-line-height:18px;
+
+		//++++++++++++++++++++++++++++ Cite ++++++++++++++++++++++++++++//
+
+		$cite-bottom-pos:-30px;
 
 		//++++++++++++++++++++++++++++ Font Style Types ++++++++++++++++++++++++++++//
 
