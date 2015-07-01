@@ -73,6 +73,11 @@
 			$blockquote-font-color:#aeaeae;
 			$blockquote-bg-color:#fcfcfc;
 			$blockquote-border-color:#f3f3f3;
+			
+			//%%%%%% Table Colors %%%%%%//
+			$table-header:#e8e7e7;
+			$table-border:#ccc;
+			$table-row-even:#f3f3f3;
 
 		//++++++++++++++++++++++++++++ Font Family ++++++++++++++++++++++++++++//
 
@@ -121,6 +126,14 @@
 			//%%%%%% Line Height %%%%%%//
 			$p-line-height:22px;
 			$grid-p-line-height:14px;
+		
+
+		//++++++++++++++++++++++++++++ Tables ++++++++++++++++++++++++++++//
+		
+		$table-padding:10px;
+		$th-font-size:16px;
+		$td-font-size:14px;
+		$td-line-height:18px;
 
 		//++++++++++++++++++++++++++++ Blockquotes ++++++++++++++++++++++++++++//
 
