@@ -302,8 +302,9 @@
 						<p>In the past, tables were used to build everything for the web. Today, the div element has happly replaced tables. However, tables are still the way to go for displaying tabular data.</p>
 					</div>
 				</div>
-
-				<div class="row no-style">
+				
+				<h4>Basic Table</h4>
+				<div class="row">
 					<table>
 						<thead>
 							<tr>
@@ -334,6 +335,155 @@
 							</tr>
 						</tbody>
 					</table>
+				</div>
+				
+				<div class="row">
+					<script type="syntaxhighlighter" class="brush: js ctns-24"><![CDATA[
+						<table>
+							<thead>
+								<tr>
+									<th>/*Leonardo*/</th>
+									<th>/*Michelangelo*/</th>
+									<th>/*Raphael*/</th>
+									<th>/*Donatello*/</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>/*We were awesome!*/</td>
+									<td>/*God, I LOVE *BEING A TURTLE*!*/</td>
+									<td>/*Totally tubular, dude!*/</td>
+									<td>/*We were awesome*/</td>
+								</tr>
+								<tr>
+									<td>/*I know Splinter's out there*/</td>
+									<td>/*Oh man, I could go for a little deep dish action right about now*/</td>
+									<td>/*How about a five-minute game misconduct for roughing, pal?*/</td>
+									<td>/*I think he's actually turning red*/</td>
+								</tr>
+								<tr>
+									<td>/*I never said I was a great leader*/</td>
+									<td>/*Yes, Dudes and Dudettes, major-league butt-kicking is back in town*/</td>
+									<td>/*Look, I don't wanna fight you*/</td>
+									<td>/*Uh... he just needs to blow off some steam*/</td>
+								</tr>
+							</tbody>
+						</table>
+					]]></script>
+				</div>
+
+				<h4>Table With Caption</h4>
+				<div class="row">
+					<table>
+						<caption>We're reviving a canceled undercover police program from the '80s and revamping it for modern times. You see the guys in charge of this stuff lack creativity and are completely out of ideas, 
+						so all they do now is recycle shit from the past and expect us all not to notice.</caption>
+						<thead>
+							<tr>
+								<th>Jenko</th>
+								<th>Schmidt</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Those are jocks, those are nerds...</td>
+								<td>Sir, I know we may look like a couple of lady-killers, but me and my partner will be super professional...</td>
+							</tr>
+							<tr>
+								<td>It obviously starts with... you have the right to... remain an attorney...</td>
+								<td>When did I get stabbed? That's awesome!</td>
+							</tr>
+							<tr>
+								<td>Chemistry's the one with the shapes and shit, right?</td>
+								<td>We're like, in the end of "Die Hard" right now, only it's our actual life!</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="row">
+					<script type="syntaxhighlighter" class="brush: js ctns-24"><![CDATA[
+						<table>
+							<caption>/*We're reviving a canceled undercover police program from the '80s and revamping it for modern times. You see the guys in charge of this stuff lack creativity and are completely out of ideas, 
+							so all they do now is recycle shit from the past and expect us all not to notice.*/</caption>
+							<thead>
+								<tr>
+									<th>/*Jenko*/</th>
+									<th>/*Schmidt*/</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>/*Those are jocks, those are nerds...*/</td>
+									<td>/*Sir, I know we may look like a couple of lady-killers, but me and my partner will be super professional...*/</td>
+								</tr>
+								<tr>
+									<td>/*It obviously starts with... you have the right to... remain an attorney...*/</td>
+									<td>/*When did I get stabbed? That's awesome!*/</td>
+								</tr>
+								<tr>
+									<td>/*Chemistry's the one with the shapes and shit, right?*/</td>
+									<td>/*We're like, in the end of "Die Hard" right now, only it's our actual life!*/</td>
+								</tr>
+							</tbody>
+						</table>
+					]]></script>
+				</div>
+
+				<h4>Table With Hover State</h4>
+				<div class="row">
+					<table class="table-hover">
+						<caption>We're reviving a canceled undercover police program from the '80s and revamping it for modern times. You see the guys in charge of this stuff lack creativity and are completely out of ideas, 
+						so all they do now is recycle shit from the past and expect us all not to notice.</caption>
+						<thead>
+							<tr>
+								<th>Jenko</th>
+								<th>Schmidt</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>Those are jocks, those are nerds...</td>
+								<td>Sir, I know we may look like a couple of lady-killers, but me and my partner will be super professional...</td>
+							</tr>
+							<tr>
+								<td>It obviously starts with... you have the right to... remain an attorney...</td>
+								<td>When did I get stabbed? That's awesome!</td>
+							</tr>
+							<tr>
+								<td>Chemistry's the one with the shapes and shit, right?</td>
+								<td>We're like, in the end of "Die Hard" right now, only it's our actual life!</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+
+				<div class="row">
+					<script type="syntaxhighlighter" class="brush: js ctns-24"><![CDATA[
+						<table>
+							<caption>/*We're reviving a canceled undercover police program from the '80s and revamping it for modern times. You see the guys in charge of this stuff lack creativity and are completely out of ideas, 
+							so all they do now is recycle shit from the past and expect us all not to notice.*/</caption>
+							<thead>
+								<tr>
+									<th>/*Jenko*/</th>
+									<th>/*Schmidt*/</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>/*Those are jocks, those are nerds...*/</td>
+									<td>/*Sir, I know we may look like a couple of lady-killers, but me and my partner will be super professional...*/</td>
+								</tr>
+								<tr>
+									<td>/*It obviously starts with... you have the right to... remain an attorney...*/</td>
+									<td>/*When did I get stabbed? That's awesome!*/</td>
+								</tr>
+								<tr>
+									<td>/*Chemistry's the one with the shapes and shit, right?*/</td>
+									<td>/*We're like, in the end of "Die Hard" right now, only it's our actual life!*/</td>
+								</tr>
+							</tbody>
+						</table>
+					]]></script>
 				</div>
 			</section>
 

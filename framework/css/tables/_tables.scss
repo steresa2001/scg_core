@@ -6,7 +6,15 @@ table
 	{
 	width:100%;
 	border:1px solid $table-border;
-	text-align:left;
+	text-align:$align-l;
+	caption 
+		{
+		padding-bottom:calc-em($caption-padding, $context);
+		font-size:$caption-font-size;
+		color:$caption-color;
+		text-align:$align-l;
+		line-height:$caption-line-height;
+		}
 	thead
 		{
 		background-color:$table-header;
@@ -28,6 +36,10 @@ table
 		line-height:$td-line-height;
 		vertical-align:$valign-m;
 		}
+	}
+.table-hover tbody tr:hover
+	{
+	background-color:$table-row-hover;
 	}
 
 //---- End SCSS - CSS ----//

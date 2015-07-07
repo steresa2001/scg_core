@@ -8672,6 +8672,12 @@ table {
   width: 100%;
   border: 1px solid #ccc;
   text-align: left; }
+  table caption {
+    padding-bottom: 1.25em;
+    font-size: 13px;
+    color: #abaaaa;
+    text-align: left;
+    line-height: 18px; }
   table thead {
     background-color: #e8e7e7; }
     table thead th {
@@ -8685,6 +8691,9 @@ table {
     font-size: 14px;
     line-height: 18px;
     vertical-align: middle; }
+
+.table-hover tbody tr:hover {
+  background-color: #f7f7f7; }
 
 body img {
   max-width: 100%;

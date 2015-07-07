@@ -78,6 +78,8 @@
 			$table-header:#e8e7e7;
 			$table-border:#ccc;
 			$table-row-even:#f3f3f3;
+			$table-row-hover:#f7f7f7;
+			$caption-color:#abaaaa;;
 
 		//++++++++++++++++++++++++++++ Font Family ++++++++++++++++++++++++++++//
 
@@ -131,8 +133,11 @@
 		//++++++++++++++++++++++++++++ Tables ++++++++++++++++++++++++++++//
 		
 		$table-padding:10px;
+		$caption-padding:20px;
+		$caption-font-size:13px;
 		$th-font-size:16px;
 		$td-font-size:14px;
+		$caption-line-height:18px;
 		$td-line-height:18px;
 
 		//++++++++++++++++++++++++++++ Blockquotes ++++++++++++++++++++++++++++//
