@@ -82,22 +82,22 @@
 					</div>
 				</div>
 				
-				<h4>Left Aligned</h4>
+				<h3>Left Aligned</h3>
 				<div class="row no-style">
 					<p class="left-aligned">What is real? How do you define 'real'? If you're talking about what you can feel, what you can smell, what you can taste and see, then 'real' is simply electrical signals interpreted by your brain.</p>
 				</div>
 
-				<h4>Right Aligned</h4>
+				<h3>Right Aligned</h3>
 				<div class="row no-style">
 					<p class="right-aligned">Have you ever had a dream, Neo, that you were so sure was real? What if you were unable to wake from that dream? How would you know the difference between the dream world and the real world?</p>
 				</div>
 
-				<h4>Center Aligned</h4>
+				<h3>Center Aligned</h3>
 				<div class="row no-style">
 					<p class="centered-aligned">I see it in your eyes. You have the look of a man who accepts what he sees because he is expecting to wake up. Ironically, that's not far from the truth. Do you believe in fate, Neo?</p>
 				</div>
 
-				<h4>Justified</h4>
+				<h3>Justified</h3>
 				<div class="row no-style">
 					<p class="justified">This is your last chance. After this, there is no turning back. You take the blue pill - the story ends, you wake up in your bed and believe whatever you want to believe. 
 					You take the red pill - you stay in Wonderland and I show you how deep the rabbit-hole goes.</p>
@@ -121,7 +121,7 @@
 					</div>
 				</div>
 				
-				<h4>Styled List</h4>
+				<h3>Styled List</h3>
 				<div class="row no-style">
 					<ul>
 						<li>You can be my wingman any time</li>
@@ -164,7 +164,7 @@
 					]]></script>
 				</div>
 
-				<h4>Unstyled List</h4>
+				<h3>Unstyled List</h3>
 				<div class="row no-style">
 					<ul class="unstyled-list">
 						<li>You couldn't hear a dump truck driving through a nitroglycerin plant</li>
@@ -195,7 +195,7 @@
 					]]></script>
 				</div>
 
-				<h4>Ordered List</h4>
+				<h3>Ordered List</h3>
 				<div class="row no-style">
 					<ol>
 						<li>Goonies never say die!</li>
@@ -303,7 +303,7 @@
 					</div>
 				</div>
 				
-				<h4>Basic Table</h4>
+				<h3>Basic Table</h3>
 				<div class="row">
 					<table>
 						<thead>
@@ -372,7 +372,7 @@
 					]]></script>
 				</div>
 
-				<h4>Table With Caption</h4>
+				<h3>Table With Caption</h3>
 				<div class="row">
 					<table>
 						<caption>We're reviving a canceled undercover police program from the '80s and revamping it for modern times. You see the guys in charge of this stuff lack creativity and are completely out of ideas, 
@@ -395,6 +395,10 @@
 							<tr>
 								<td>Chemistry's the one with the shapes and shit, right?</td>
 								<td>We're like, in the end of "Die Hard" right now, only it's our actual life!</td>
+							</tr>
+							<tr>
+								<td>It's arguably, like, an airplane throwing up.</td>
+								<td>Um, I would just like to say that I would give a shit if he were black.</td>
 							</tr>
 						</tbody>
 					</table>
@@ -429,29 +433,31 @@
 					]]></script>
 				</div>
 
-				<h4>Table With Hover State</h4>
+				<h3>Table With Hover State</h3>
 				<div class="row">
 					<table class="table-hover">
-						<caption>We're reviving a canceled undercover police program from the '80s and revamping it for modern times. You see the guys in charge of this stuff lack creativity and are completely out of ideas, 
-						so all they do now is recycle shit from the past and expect us all not to notice.</caption>
 						<thead>
 							<tr>
-								<th>Jenko</th>
-								<th>Schmidt</th>
+								<th>Willy Wonka</th>
+								<th>Charlie Bucket</th>
 							</tr>
 						</thead>
 						<tbody>
 							<tr>
-								<td>Those are jocks, those are nerds...</td>
-								<td>Sir, I know we may look like a couple of lady-killers, but me and my partner will be super professional...</td>
+								<td>I always thought a verruca was a type of wart you got on the bottom of your foot.</td>
+								<td>You can eat the grass?</td>
 							</tr>
 							<tr>
-								<td>It obviously starts with... you have the right to... remain an attorney...</td>
-								<td>When did I get stabbed? That's awesome!</td>
+								<td>Let's go put him in the taffy puller!</td>
+								<td>Candy doesn't have to have a point. That's why it's candy.</td>
 							</tr>
 							<tr>
-								<td>Chemistry's the one with the shapes and shit, right?</td>
-								<td>We're like, in the end of "Die Hard" right now, only it's our actual life!</td>
+								<td>Oh, thank you. You smell like... old people. And soap. I like it.</td>
+								<td>So, if I go with you to the factory, I won't ever see my family again?</td>
+							</tr>
+							<tr>
+								<td>Where all the other bad nuts go, to the garbage chute.</td>
+								<td>Are the Oompa Loompas really joking, Grandpa?</td>
 							</tr>
 						</tbody>
 					</table>
@@ -459,27 +465,29 @@
 
 				<div class="row">
 					<script type="syntaxhighlighter" class="brush: js ctns-24"><![CDATA[
-						<table>
-							<caption>/*We're reviving a canceled undercover police program from the '80s and revamping it for modern times. You see the guys in charge of this stuff lack creativity and are completely out of ideas, 
-							so all they do now is recycle shit from the past and expect us all not to notice.*/</caption>
+						<table class="table-hover">
 							<thead>
 								<tr>
-									<th>/*Jenko*/</th>
-									<th>/*Schmidt*/</th>
+									<th>/*Willy Wonka*/</th>
+									<th>/*Charlie Bucket*/</th>
 								</tr>
 							</thead>
 							<tbody>
 								<tr>
-									<td>/*Those are jocks, those are nerds...*/</td>
-									<td>/*Sir, I know we may look like a couple of lady-killers, but me and my partner will be super professional...*/</td>
+									<td>/*I always thought a verruca was a type of wart you got on the bottom of your foot.*/</td>
+									<td>/*You can eat the grass?*/</td>
 								</tr>
 								<tr>
-									<td>/*It obviously starts with... you have the right to... remain an attorney...*/</td>
-									<td>/*When did I get stabbed? That's awesome!*/</td>
+									<td>/*Let's go put him in the taffy puller!*/</td>
+									<td>/*Candy doesn't have to have a point. That's why it's candy.*/</td>
 								</tr>
 								<tr>
-									<td>/*Chemistry's the one with the shapes and shit, right?*/</td>
-									<td>/*We're like, in the end of "Die Hard" right now, only it's our actual life!*/</td>
+									<td>/*Oh, thank you. You smell like... old people. And soap. I like it.*/</td>
+									<td>/*So, if I go with you to the factory, I won't ever see my family again?*/</td>
+								</tr>
+								<tr>
+									<td>/*Where all the other bad nuts go, to the garbage chute.*/</td>
+									<td>/*Are the Oompa Loompas really joking, Grandpa?*/</td>
 								</tr>
 							</tbody>
 						</table>

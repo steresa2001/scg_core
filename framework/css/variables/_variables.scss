@@ -1,54 +1,78 @@
 //****  This is the master scss/css file for all variables  ****//
 
-//---- Start Body Variables ----//
-			
-			
-
-//---- End Body Variables ----//
-
-//---- Start Header Variables ----//
-			
-	$header-bg-color:#141414;																//**** $header-bg-color ****// (sets the background color of the header)
-	$header-min-height:400px;																//**** $header-min-height ****// (sets the min height of the header)
-	$header-border-size:16px;																//**** $header-border-size ****// (sets the border size of the header)
-	$header-border-color:#1a1a1a;															//**** $header-border-color ****// (sets the border color of the header)
-
-//---- End Header Variables ----//
-
-//---- Start Nav Variables ----//
-			
-	$nav-bg-color:#181818;																	//**** $nav-bg-color ****// (sets the background color of the nav)
-	$nav-height:68px;																			//**** $nav-height ****// (sets the height of the nav)
-	$nav-border-size:2px;																		//**** $nav-border-size ****// (sets the border size of the nav)
-	$nav-border-color:#313131;																//**** $nav-border-color ****// (sets the border color of the nav)
-
-//---- End Nav Variables ----//
-
-//---- Start Footer Variables ----//
-			
-	$footer-bg-color:#141414;																//**** $footer-bg-color ****// (sets the background color of the footer)
-	$footer-height:300px;																		//**** $footer-height ****// (sets the height of the footer)
-
-//---- End Footer Variables ----//
-
-//---- Start Grid Variables ----//
-
-	$grid-max-width:960px;																	//**** $grid-max-width ****// (sets the max width of the grid)
-	$grid-min-width:320px;																	//**** $grid-min-width ****// (sets the min width of the grid)
-	$grid-ctn-min-height:25px;																//**** $grid-ctn-min-height ****// (sets the min height of the grid column)
-	$grid-ctn-horizontal-margin:10px;														//**** $grid-ctn-horizontal-margin ****// (sets the horizontal margin of the grid column)
-	$grid-ctn-vertical-margin:10px; 															//**** $grid-ctn-vertical-margin ****// (sets the vertical margin of the grid column)
-	$grid-ctn-only-left-margin:10px;															//**** $grid-ctn-only-left-margin ****// (sets the left margin of the grid column and removes the right margin)
-	$grid-ctn-100:100%;																		//**** $grid-ctn-100 ****// (sets grid column width to 100%)
-	$grid-ctn-no-margin:0px;																	//**** $grid-ctn-no-margin ****// (removes margins on columns)
-
-//---- End Grid Variables ----//
-
-//---- Start Font Variables ----//
+//---- Start Header ----//
 		
-		//++++++++++++++++++++++++++++ Colors ++++++++++++++++++++++++++++//
+		//+++ Header Sizes +++//
+
+			$header-min-height:400px;																//**** $header-min-height ****// (sets the min height of the header)
+			$header-border-size:16px;																//**** $header-border-size ****// (sets the border size of the header)
+
+		//+++ Header Colors +++//
+
+			$header-bg-color:#141414;																//**** $header-bg-color ****// (sets the background color of the header)
+			$header-border-color:#1a1a1a;															//**** $header-border-color ****// (sets the border color of the header)
+
+//---- End Header ----//
+
+//---- Start Nav ----//
+		
+		//+++ Nav Sizes +++//
+
+			$nav-height:68px;																			//**** $nav-height ****// (sets the height of the nav)
+			$nav-border-size:2px;																		//**** $nav-border-size ****// (sets the border size of the nav)
+
+		//+++ Nav Colors +++//
+
+			$nav-bg-color:#181818;																	//**** $nav-bg-color ****// (sets the background color of the nav)
+			$nav-border-color:#313131;																//**** $nav-border-color ****// (sets the border color of the nav)
+
+//---- End Nav ----//
+
+//---- Start Footer ----//
+		
+		//+++ Footer Colors +++//
+
+			$footer-bg-color:#141414;																//**** $footer-bg-color ****// (sets the background color of the footer)
 			
-			//%%%%%% Colors %%%%%%//
+		//+++ Footer Sizes +++//
+
+			$footer-height:300px;																		//**** $footer-height ****// (sets the height of the footer)
+
+//---- End Footer ----//
+
+//---- Start Grid ----//
+		
+		//+++ Grid Margins/Paddings +++//
+
+			$grid-ctn-horizontal-margin:10px;														//**** $grid-ctn-horizontal-margin ****// (sets the horizontal margin of the grid column)
+			$grid-ctn-vertical-margin:10px; 															//**** $grid-ctn-vertical-margin ****// (sets the vertical margin of the grid column)
+			$grid-ctn-only-left-margin:10px;															//**** $grid-ctn-only-left-margin ****// (sets the left margin of the grid column and removes the right margin)
+			$grid-ctn-no-margin:0px;																	//**** $grid-ctn-no-margin ****// (removes margins on columns)
+
+		//+++ Grid Sizes +++//
+			
+			$grid-max-width:960px;																	//**** $grid-max-width ****// (sets the max width of the grid)
+			$grid-min-width:320px;																	//**** $grid-min-width ****// (sets the min width of the grid)
+			$grid-ctn-min-height:25px;																//**** $grid-ctn-min-height ****// (sets the min height of the grid column)
+			$grid-ctn-100:100%;																		//**** $grid-ctn-100 ****// (sets grid column width to 100%)
+
+//---- End Grid ----//
+
+//---- Start Font ----//
+		
+		//+++ Font Context +++//
+
+			$context:16px;																	//**** $context ****// (sets the base size for your px's)
+
+		//+++ Font Family +++//
+					
+			$robotoCondensed:'Roboto Condensed', sans-serif;								//**** $robotoCondensed: ****// (sets the font family for all h1's)
+			$oxygen:'Oxygen', sans-serif;														//**** $oxygen: ****// (sets the font family for all h2's)
+			$mavenPro:'Maven Pro', sans-serif;												//**** $mavenPro: ****// (sets the font family for the body)
+			$glyphicons:'Glyphicons Regular';												//**** $glyphicons: ****// (sets the font family for glyphicons)
+
+		//+++ Font Colors +++//
+			
 			$pinkish:#c062aa;
 			$cyan:#74cedc;
 			$blue:#7da1ba;
@@ -63,107 +87,14 @@
 			$aqua:#02baef;
 			$slate:#94a9b9;
 
-			//%%%%%% Button Colors %%%%%%//
-			$primary-purple:#9563c0;
-			$green-success:#21be21;
-			$yellow-warning:#f0c810;
-			$red-error:#8e0400;
-			
-			//%%%%%% Blockquote Colors %%%%%%//
-			$blockquote-font-color:#aeaeae;
-			$blockquote-bg-color:#fcfcfc;
-			$blockquote-border-color:#f3f3f3;
-			
-			//%%%%%% Table Colors %%%%%%//
-			$table-header:#e8e7e7;
-			$table-border:#ccc;
-			$table-row-even:#f3f3f3;
-			$table-row-hover:#f7f7f7;
-			$caption-color:#abaaaa;;
+		//+++ Font Styles +++//
 
-		//++++++++++++++++++++++++++++ Font Family ++++++++++++++++++++++++++++//
-
-			//%%%%%% Font Family %%%%%%//						
-			$robotoCondensed:'Roboto Condensed', sans-serif;								//**** $robotoCondensed: ****// (sets the font family for all h1's)
-			$oxygen:'Oxygen', sans-serif;														//**** $oxygen: ****// (sets the font family for all h2's)
-			$mavenPro:'Maven Pro', sans-serif;												//**** $mavenPro: ****// (sets the font family for the body)
-			$glyphicons:'Glyphicons Regular';												//**** $glyphicons: ****// (sets the font family for glyphicons)
-
-		//++++++++++++++++++++++++++++ Headings ++++++++++++++++++++++++++++//
-
-			//%%%%%% Sizes %%%%%%//
-			$context:16px;																	//**** $context ****// (sets the base size for your px's)
-
-
-			$heading1-size:46px;																//**** $heading1-size ****// (sets the size for all h1's)
-			$heading2-size:40px;																//**** $heading2-size ****// (sets the size for all h2's)
-			$heading3-size:30px;																//**** $heading3-size ****// (sets the size for all h3's)
-			$heading4-size:22px;																//**** $heading4-size ****// (sets the size for all h4's)
-			$heading5-size:18px;																//**** $heading5-size ****// (sets the size for all h5's)
-			$heading6-size:14px;																//**** $heading6-size ****// (sets the size for all h6's)
-
-			//%%%%%% Margins %%%%%%//
-			$main-heading-margin:5px;														//**** $main-heading-margin ****// (sets the top and bottom margin for h1)
-			$heading-margin:10px;															//**** $heading-margin ****// (sets the top and bottom margin for all other headings)
-
-			//%%%%%% Paddings %%%%%%//
-			$heading-padding:10px;															//**** $heading-padding ****// (sets the left and right padding for all headings)
-
-			//%%%%%% Line Height %%%%%%//
-			$heading-line-height:1.4; 															//**** $heading-line-height ****// (sets the line height for all headings)
-		
-		//++++++++++++++++++++++++++++ Paragraphs ++++++++++++++++++++++++++++//
-			
-			//%%%%%% Padding %%%%%%//
-			$p-padding:16px;
-			
-			//%%%%%% Font Size %%%%%%//
-			$p-font-size:18px;
-			$p-font-size-s:14px;
-
-			//%%%%%% Colors %%%%%%//
-			$p-color:#8a8a8a;
-			$grid-p-color:#cccccc;
-
-			//%%%%%% Line Height %%%%%%//
-			$p-line-height:22px;
-			$grid-p-line-height:14px;
-		
-
-		//++++++++++++++++++++++++++++ Tables ++++++++++++++++++++++++++++//
-		
-		$table-padding:10px;
-		$caption-padding:20px;
-		$caption-font-size:13px;
-		$th-font-size:16px;
-		$td-font-size:14px;
-		$caption-line-height:18px;
-		$td-line-height:18px;
-
-		//++++++++++++++++++++++++++++ Blockquotes ++++++++++++++++++++++++++++//
-
-		$blockquote-padding:20px 20px 55px;
-		$blockquote-font-size:14px;
-		$blockquote-line-height:18px;
-
-		//++++++++++++++++++++++++++++ Cite ++++++++++++++++++++++++++++//
-
-		$cite-bottom-pos:-30px;
-
-		//++++++++++++++++++++++++++++ Font Style Types ++++++++++++++++++++++++++++//
-
-			//%%%%%% Font Styles %%%%%%//	
 			$s-italic:italic;																		//**** $sitalic ****// (sets the font style to italic)
 			$s-capitalize:capitalize;															//**** $s-capitalize ****// (sets the font style to capitalize)
-
-			//%%%%%% Font Weight %%%%%%//	
 			$w-normal:normal;																//**** $normal ****// (sets the font weight to normal)
 			$w-bold:bold;																		//**** $bold ****// (sets the font weight to bold)
 			$w-bolder:bolder;																	//**** $bolder ****// (sets the font weight even bolder)
 			$w-lighter:lighter;																	//**** $bolder ****// (sets the font weight to light)
-
-			/* Defines from thin to thick characters. 
-			400 is the same as normal, and 700 is the same as bold */
 			$w-100:100;																	
 			$w-200:200;
 			$w-300:300;
@@ -174,10 +105,7 @@
 			$w-800:800;
 			$w-900:900;
 
-			//%%%%%% Font Line Height %%%%%%//
-
-
-		//++++++++++++++++++++++++++++ Font Alignment ++++++++++++++++++++++++++++//
+		//+++ Font Alignment +++//
 
 			$align-l:left;																		//**** $align-l ****// (sets the font alignment to left)
 			$align-r:right;																		//**** $align-r ****// (sets the font alignment to right)
@@ -187,28 +115,116 @@
 			$valign-m:middle;																	//**** $valign-m****// (sets the vertical font alignment to middle)
 			$valign-b:bottom;																	//**** $valign-b ****// (sets the vertical font alignment to bottom)
 
-		//++++++++++++++++++++++++++++ Anchor Tags ++++++++++++++++++++++++++++//
+//---- End Font ----//
+
+//---- Start Headings ----//
+		
+		//+++ Heading Font Sizes +++//
+
+			$heading1-size:46px;																//**** $heading1-size ****// (sets the size for all h1's)
+			$heading2-size:40px;																//**** $heading2-size ****// (sets the size for all h2's)
+			$heading3-size:30px;																//**** $heading3-size ****// (sets the size for all h3's)
+			$heading4-size:22px;																//**** $heading4-size ****// (sets the size for all h4's)
+			$heading5-size:18px;																//**** $heading5-size ****// (sets the size for all h5's)
+			$heading6-size:14px;																//**** $heading6-size ****// (sets the size for all h6's)
+			$heading-line-height:1.4; 															//**** $heading-line-height ****// (sets the line height for all headings)
+
+		//+++ Heading Margins/Paddings +++//
+
+			$main-heading-margin:5px;														//**** $main-heading-margin ****// (sets the top and bottom margin for h1)
+			$heading-margin:10px;															//**** $heading-margin ****// (sets the top and bottom margin for all other headings)
+			$heading-padding:10px;															//**** $heading-padding ****// (sets the left and right padding for all headings)
+
+//---- End Headings ----//
+
+//---- Start Paragraphs ----//
+		
+		//+++ Paragraph Margins/Paddings +++//
+
+			$p-padding:16px;																	//**** $p-padding ****// (sets the padding for paragraphs)
 			
-			//%%%%%% Colors %%%%%%//
+		//+++ Paragraph Font Sizes +++//
+
+			$p-font-size:18px; 																//**** $p-font-size****// (sets the default font size for paragraphs)
+			$p-font-size-s:14px;																//**** $p-font-size-s***// (sets the small font size for paragraphs)
+			$p-line-height:22px;																//**** $p-line-height:***// (sets the line height for paragraphs)
+			$grid-p-line-height:14px;															//**** $grid-p-line-height:***// (sets the line height for paragraphs in grid)
+
+		//+++ Paragraph Colors +++//
+
+			$p-color:#8a8a8a;																	//**** $p-color:***// (sets the color for paragraphs)
+			$grid-p-color:#cccccc; 															//**** $grid-p-color:***// (sets the color for paragraphs in grid)
+
+//---- End Paragraphs ----//
+
+//---- Start Tables ----//
+		
+		//+++ Table Margins/Paddings +++//
+			$table-padding:10px;
+			$caption-padding:20px;
+			
+		//+++ Table Font Sizes +++//
+			$caption-font-size:13px;
+			$th-font-size:16px;
+			$td-font-size:14px;
+			$caption-line-height:18px;
+			$td-line-height:18px;
+
+		//+++ Table Colors +++//
+
+			$table-header:#e8e7e7;
+			$table-border:#ccc;
+			$table-row-even:#f3f3f3;
+			$table-row-hover:#f7f7f7;
+			$caption-color:#abaaaa;
+
+//---- End Tables ----//
+
+//---- Start Anchor Tags ----//
+			
+			//+++ Anchor Font Styles +++//
+
+			$text-dec-un:underline;															//**** $text-dec-un ****// (sets text decoration to underline)
+			$text-dec-n:none;																	//**** $text-dec-un ****// (sets text decoration to none)
+
+			//+++ Anchor Colors +++//
+
 			$default-links-color:inherit;														//**** $default-links-color ****// (sets default link color)
 			$default-links-visited-color:#8a8a8a;												//**** $default-links-visited-color ****// (sets visited link color)
 
-			//%%%%%% Style %%%%%%//
-			$text-dec-un:underline;															//**** $text-dec-un ****// (sets text decoration to underline)
-			$text-dec-n:none;																	//**** $text-dec-un ****// (sets text decoration to none)
-		
-		//++++++++++++++++++++++++++++ Buttons ++++++++++++++++++++++++++++//
-			
-			//%%%%%% Font Sizes %%%%%%//
-			$xxxl-btn-font-size:30px;
-			$xxl-btn-font-size:26px;
-			$xl-btn-font-size:22px;
-			$default-btn-font-size:18px;
-			$xs-btn-font-size:16px;
-			$xxs-btn-font-size:14px;
-			$xxxs-btn-font-size:13px;
+//---- End Anchor Tags ----//
 
-			//%%%%%% Paddings %%%%%%//
+//---- Start Blockquotes ----//
+		
+		//+++ Blockquote Margins/Paddings +++//
+
+			$blockquote-padding:20px 20px 55px;
+
+		//+++ Blockquote Font Sizes +++//
+
+			$blockquote-font-size:14px;
+			$blockquote-line-height:18px;
+
+		//+++ Blockquote Colors +++//
+
+			$blockquote-font-color:#aeaeae;
+			$blockquote-bg-color:#fcfcfc;
+			$blockquote-border-color:#f3f3f3;
+
+//---- End Blockquotes ----//
+
+//---- Start Cite ----//
+		
+		//+++ Cite Position +++//
+
+			$cite-bottom-pos:-30px;
+
+//---- End Cite ----//
+
+//---- Start Buttons ----//
+		
+		//+++ Button Margins/Paddings +++//
+
 			$xxxl-btn-p:18px;
 			$xxl-btn-p:16px;
 			$xl-btn-p:14px;
@@ -216,25 +232,32 @@
 			$xs-btn-p:10px;
 			$xxs-btn-p:8px;
 			$xxxs-btn-p:6px;
-
-			//%%%%%% Paddings For Font Icons %%%%%%//
 			$btn-icon-p:6px;
 
-			//%%%%%% Border Radius %%%%%%//
+		//+++ Button Sizes +++//
+
+			$xxxl-btn-font-size:30px;
+			$xxl-btn-font-size:26px;
+			$xl-btn-font-size:22px;
+			$default-btn-font-size:18px;
+			$xs-btn-font-size:16px;
+			$xxs-btn-font-size:14px;
+			$xxxs-btn-font-size:13px;
 			$default-border-radius:10px !default;
 			$one-side:0px !default;
 
-		//++++++++++++++++++++++++++++ Misc ++++++++++++++++++++++++++++//
-		
-			//%%%%%% Showcase %%%%%%//
-			$showcase-bgcolor:#1e1e1e;														//**** $showcase-bgcolor ****// (sets the background color for showcase wrapper)
-			$showcase-p-padding:20px 20px;												//**** $showcase-p-padding ****// (sets the paragraph padding for showcase wrapper)
+		//+++ Button Colors +++//
 
-//---- End Font Variables ----//
+			$primary-purple:#9563c0;
+			$green-success:#21be21;
+			$yellow-warning:#f0c810;
+			$red-error:#8e0400;
 
-//---- Start Layout Variables ----//
+//---- End Buttons ----//
 
-		//++++++++++++++++++++++++++++ Positioning ++++++++++++++++++++++++++++//
+//---- Start Layout Positioning ----//
+
+		//+++ Layout Positioning +++//
 			
 			$pos-rel:relative;																	//**** $pos-rel ****// (sets the position to relative)
 			$pos-abs:absolute;																//**** $pos-abs// (sets the position to absolute)
@@ -244,42 +267,54 @@
 			$float-r:right;																		//**** $float-r// (floats elements to the right)
 			$center:center;																	//**** $center// (centers elements)
 
-		//++++++++++++++++++++++++++++ Display Type ++++++++++++++++++++++++++++//
+		//+++ Layout Positioning Display Type +++//
 
 			$blc:block;																			//**** $blc ****// (sets the display type to block)
 			$inl:inline;																			//**** $inl ****// (sets the display type to inline)
 			$inl-blc:inline-block;																//**** $inl-blc ****// (sets the display type to inline block)
 
-		//++++++++++++++++++++++++++++ Widths ++++++++++++++++++++++++++++//
+		//+++ Layout Positioning Sizes +++//
 
 			$width-100:100%;																	//**** $width-100 ****// (sets the width to 100%)			
 
-//---- End Layout Variables ----//
+//---- End Layout Positioning ----//
 
-//---- Start Style Variables ----//
+//---- Start Global Borders ----//
 
-		//++++++++++++++++++++++++++++ Borders ++++++++++++++++++++++++++++//
+		//+++ Global Border Styles +++//
 
 			$b-solid:solid;
 			$b-dotted:dotted;
 			$b-dashed:dashed;
 			$border-box:border-box;															//**** $border-box ****// (sets the box size to border box)
 
-//---- End Style Variables ----//
+//---- End Global Borders ----//
 
-//---- Start Media Query Variables ----//
+//---- Start Media Queries----//
 
-		//++++++++++++++++++++++++++++ iPhone Portrait ++++++++++++++++++++++++++++//
+		//+++ iPhone Portrait +++//
 		
 		$iphone-port:'only screen and (min-width:320px) and (max-width:480px)';			//**** $iphone-port ****// (sets the media query iPhone portrait)
 		
-		//++++++++++++++++++++++++++++ iPad Portrait ++++++++++++++++++++++++++++//
+		//+++ iPad Portrait +++//
 		
 		$ipad-port:'only screen and (min-width:767px) and (max-width:1023px)';			//**** $ipad-port ****// (sets the media query for iPad portrait)
 
 
-//---- End Media Query Variables ----//
+//---- End Media Queries ----//
 
+
+//---- Start Framework Specific Styles ----//
+		
+		//+++ Framework Specific Margins/Paddings +++//
+
+			$showcase-p-padding:20px 20px;												//**** $showcase-p-padding ****// (sets the paragraph padding for showcase wrapper)
+
+		//+++ Framework Specific Colors +++//
+
+			$showcase-bgcolor:#1e1e1e;														//**** $showcase-bgcolor ****// (sets the background color for showcase wrapper)
+
+//---- End Framework Specific Styles ----//
 
 
 

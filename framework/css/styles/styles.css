@@ -34,10 +34,6 @@ q:before, q:after {
   content: '';
   content: none; }
 
-/* Defines from thin to thick characters. 
-400 is the same as normal, and 700 is the same as bold */
-/* Defines from thin to thick characters. 
-400 is the same as normal, and 700 is the same as bold */
 @font-face {
   font-family: "Glyphicons Regular";
   src: url("http://localhost:8888/framework/fonts/glyphicons-regular.eot");
@@ -4689,10 +4685,6 @@ cite:before {
   margin: 0 0;
   width: 100%; }
 
-/* Defines from thin to thick characters. 
-400 is the same as normal, and 700 is the same as bold */
-/* Defines from thin to thick characters. 
-400 is the same as normal, and 700 is the same as bold */
 @font-face {
   font-family: "Glyphicons Regular";
   src: url("http://localhost:8888/framework/fonts/glyphicons-regular.eot");

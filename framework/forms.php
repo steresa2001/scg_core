@@ -18,7 +18,7 @@
 		<div class="ctn-18">
 			
 			<div class="row">
-				<h1>Forms Elements With Style</h1>
+				<h1>Form Elements With Style</h1>
 			</div>
 
 			<section>
