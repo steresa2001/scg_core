@@ -12,20 +12,20 @@ select 	{
 input[type=text], input[type=email], input[type=tel], select
 		{
 		@include border-box;
-		@include border-radius-all($default-border-radius);
+		@include border-radius-all(default-border-radius);
 		padding-left:calc-em(10px, $context);
 		width:90%;
 		height:30px;
 		font-size:calc-em(13px, $context);
 		color:$dark-grey;
-		border:1px $b-solid $light-grey;
+		border:1px $border-solid $light-grey;
 		-webkit-appearance:none;
 		outline:none;
 	&:focus
 			{
 			@include box-shadow(0, 0, 10px, $light-grey);
 			font-weight:$w-bold;
-			border:1px $b-solid $dark-grey;
+			border:1px $border-solid $dark-grey;
 			}
 		}
 input[type=checkbox], input[type=radio]
@@ -59,9 +59,9 @@ label 	{
 		color:$slate;
 		background:$super-light-grey;
 		text-align:$align-c;
-		border-left:1px $b-solid $light-grey;
-		border-top:1px $b-solid $light-grey;
-		border-bottom:1px $b-solid $light-grey;
+		border-left:1px $border-solid $light-grey;
+		border-top:1px $border-solid $light-grey;
+		border-bottom:1px $border-solid $light-grey;
 		font-weight:$w-bold;
 	span 	{
 			color:$slate;
@@ -69,7 +69,7 @@ label 	{
 		}
 .border-radius-right-side
 		{
-		@include border-radius-right-side($one-side, $default-border-radius, $default-border-radius, $one-side);	
+		@include border-radius-right-side($no-border-radius, default-border-radius, default-border-radius, $no-border-radius);	
 		}
 .select-arrow
 		{

@@ -31,49 +31,49 @@
 
 .primary-purple
 	{
-	background-color: $primary-purple;
+	background-color: $btn-primary-purple;
 	}
 
 .green-success
 	{
-	background-color: $green-success;
+	background-color: $btn-green-success;
 	}
 
 .yellow-warning
 	{
-	background-color: $yellow-warning;
+	background-color: $btn-yellow-warning;
 	}
 
 .red-error
 	{
-	background-color: $red-error;
+	background-color: $btn-red-error;
 	}
 
 //////////// Start Button Colors ////////////
 
 %btn-radius-all
 	{
-	@include border-radius-all($default-border-radius);
+	@include border-radius-all(default-border-radius);
 	}
 
 %btn-radius-left-side
 	{
-	@include border-radius-left-side($default-border-radius, $one-side, $one-side, $default-border-radius);
+	@include border-radius-left-side(default-border-radius, $no-border-radius, $no-border-radius, default-border-radius);
 	}
 
 %btn-radius-right-side
 	{
-	@include border-radius-right-side($one-side, $default-border-radius, $default-border-radius, $one-side);
+	@include border-radius-right-side($no-border-radius, default-border-radius, default-border-radius, $no-border-radius);
 	}
 
 %btn-radius-top
 	{
-	@include border-radius-top($default-border-radius, $default-border-radius, $one-side, $one-side);
+	@include border-radius-top(default-border-radius, default-border-radius, $no-border-radius, $no-border-radius);
 	}
 
 %btn-radius-bottom
 	{
-	@include border-radius-bottom($one-side, $one-side, $default-border-radius, $default-border-radius);
+	@include border-radius-bottom($no-border-radius, $no-border-radius, default-border-radius, default-border-radius);
 	}
 
 .btn-radius-all
@@ -103,51 +103,51 @@
 
 .simple-btn-xxxl 	
 	{
-	padding:$xxxl-btn-p;
+	padding:$btn-xxxl-p;
 	color:$white;
-	font-size:calc-em($xxxl-btn-font-size, $context);
+	font-size:calc-em($btn-xxxl-font-size, $context);
 	@extend %global-btn-style;
 	}
 .simple-btn-xxl 	
 	{
-	padding:$xxl-btn-p;
+	padding:$btn-xxl-p;
 	color:$white;
-	font-size:calc-em($xxl-btn-font-size, $context);
+	font-size:calc-em($btn-xxl-font-size, $context);
 	@extend %global-btn-style;
 	}
 .simple-btn-xl 	
 	{
-	padding:$xl-btn-p;
+	padding:$btn-xl-p;
 	color:$white;
-	font-size:calc-em($xl-btn-font-size, $context);
+	font-size:calc-em($btn-xl-font-size, $context);
 	@extend %global-btn-style;
 	}
 .simple-btn	
 	{
-	padding:$default-btn-p;
+	padding:$btn-default-p;
 	color:$white;
-	font-size:calc-em($default-btn-font-size, $context);
+	font-size:calc-em($btn-default-font-size, $context);
 	@extend %global-btn-style;
 	}
 .simple-btn-xs 	
 	{
-	padding:$xs-btn-p;
+	padding:$btn-xs-p;
 	color:$white;
-	font-size:calc-em($xs-btn-font-size, $context);
+	font-size:calc-em($btn-xs-font-size, $context);
 	@extend %global-btn-style;
 	}
 .simple-btn-xxs 	
 	{
-	padding:$xxs-btn-p;
+	padding:$btn-xxs-p;
 	color:$white;
-	font-size:calc-em($xxs-btn-font-size, $context);
+	font-size:calc-em($btn-xxs-font-size, $context);
 	@extend %global-btn-style;
 	}
 .simple-btn-xxxs 	
 	{
-	padding:$xxxs-btn-p;
+	padding:$btn-xxxs-p;
 	color:$white;
-	font-size:calc-em($xxxs-btn-font-size, $context);
+	font-size:calc-em($btn-xxxs-font-size, $context);
 	@extend %global-btn-style;
 	}
 %button-group-style
@@ -155,7 +155,7 @@
 	button 		
 		{
 		float:left;
-		border-right:1px $b-solid $white;
+		border-right:1px $border-solid $white;
 		&:last-child
 				{
 				border:none;

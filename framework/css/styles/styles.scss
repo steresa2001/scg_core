@@ -34,13 +34,13 @@ header 	{
 		min-height:calc-em($header-min-height, $context);
 		position:$pos-rel;
 		background:$header-bg-color url('http://localhost:8888/framework/images/header_bg.jpg') repeat-x left top;
-		border-bottom:calc-em($header-border-size, $context) $b-solid $header-border-color;
+		border-bottom:calc-em($header-border-size, $context) $border-solid $header-border-color;
 		nav 		
 			{
 			width:$grid-ctn-100;
 			background-color:$nav-bg-color;
 			height:$nav-height;
-			border-bottom:calc-em($nav-border-size, $context) $b-solid $nav-border-color;
+			border-bottom:calc-em($nav-border-size, $context) $border-solid $nav-border-color;
 			.logo 
 				{
 				a 	{
@@ -54,8 +54,8 @@ header 	{
 				li 	{
 					margin-top:calc-em(-20px, $context);
 					padding:calc-em(21px, $context) calc-em(12px, $context);
-					border-left:1px $b-solid #262626;
-					border-right:1px $b-solid #262626;
+					border-left:1px $border-solid #262626;
+					border-right:1px $border-solid #262626;
 					float:$float-l;
 					&:hover 
 						{
@@ -200,8 +200,8 @@ header 	{
 		margin-top:calc-em(-15px, $context);
 		min-height:calc-em(600px, $context);
 		background:#fbf9f9;
-		border-left:1px $b-solid #efeded;
-		border-right:1px $b-solid #efeded;
+		border-left:1px $border-solid #efeded;
+		border-right:1px $border-solid #efeded;
 		box-sizing:$border-box;
 		-moz-box-sizing:$border-box;
 	ul 		{
@@ -240,7 +240,7 @@ footer 	{
 		width:$grid-ctn-100;
 		height:calc-em($footer-height, $context);
 		background-color:$footer-bg-color;
-		border-top:calc-em($header-border-size, $context) $b-solid $header-border-color;
+		border-top:calc-em($header-border-size, $context) $border-solid $header-border-color;
 		}
 
 //////////// End Footer - CSS ////////////
@@ -250,7 +250,7 @@ footer 	{
 
 .border-bottom 
 		{
-		border-bottom:1px $b-solid #ccc;	
+		border-bottom:1px $border-solid #ccc;	
 		}
 .pos-rel 
 		{

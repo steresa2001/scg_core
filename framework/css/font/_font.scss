@@ -28,36 +28,36 @@ h1, h2, h3, h4, h5, h6
 h1
 	{
 	color:$pinkish;
-	font-size:calc-em($heading1-size, $context);
+	font-size:calc-em($h1-size, $context);
 	font-style:$w-normal;
 	font-weight:$w-400;	
 	}
 h2
 	{
 	color:$cyan;
-	font-size:calc-em($heading2-size, $context);
+	font-size:calc-em($h2-size, $context);
 	font-style:$w-normal;
 	font-weight:$w-300;	
 	}
 h3
 	{
 	color:$blue;
-	font-size:calc-em($heading3-size, $context);
+	font-size:calc-em($h3-size, $context);
 	}
 h4 
 	{
 	color:$purple;
-	font-size:calc-em($heading4-size, $context);	
+	font-size:calc-em($h4-size, $context);	
 	}
 h5 
 	{
 	color:$orange;
-	font-size:calc-em($heading5-size, $context);	
+	font-size:calc-em($h5-size, $context);	
 	}
 h6 
 	{
 	color:$violet;
-	font-size:calc-em($heading6-size, $context);	
+	font-size:calc-em($h6-size, $context);	
 	}
 .no-style
 	{
@@ -78,7 +78,7 @@ p
 .showcase
 	{
 	margin-top:calc-em(14px, $context);
-	border-left:10px $b-solid #a4a4a4;
+	border-left:10px $border-solid #a4a4a4;
 	background:#F2F2F2;
 	p 	{
 		padding:$showcase-p-padding;	

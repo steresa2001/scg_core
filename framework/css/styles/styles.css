@@ -8413,34 +8413,34 @@ html[xmlns] .slides {
   background-color: #8e0400; }
 
 .btn-radius-all {
-  border-radius: 10px;
-  -ms-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px; }
+  border-radius: default-border-radius;
+  -ms-border-radius: default-border-radius;
+  -moz-border-radius: default-border-radius;
+  -webkit-border-radius: default-border-radius; }
 
 .btn-radius-left-side, .button-groups-rounded button:first-child {
-  border-radius: 10px 0px 0px 10px;
-  -ms-border-radius: 10px 0px 0px 10px;
-  -moz-border-radius: 10px 0px 0px 10px;
-  -webkit-border-radius: 10px 0px 0px 10px; }
+  border-radius: default-border-radius 0px 0px default-border-radius;
+  -ms-border-radius: default-border-radius 0px 0px default-border-radius;
+  -moz-border-radius: default-border-radius 0px 0px default-border-radius;
+  -webkit-border-radius: default-border-radius 0px 0px default-border-radius; }
 
 .btn-radius-right-side, .button-groups-rounded button:last-child {
-  border-radius: 0px 10px 10px 0px !important;
-  -ms-border-radius: 0px 10px 10px 0px !important;
-  -moz-border-radius: 0px 10px 10px 0px !important;
-  -webkit-border-radius: 0px 10px 10px 0px !important; }
+  border-radius: 0px default-border-radius default-border-radius 0px !important;
+  -ms-border-radius: 0px default-border-radius default-border-radius 0px !important;
+  -moz-border-radius: 0px default-border-radius default-border-radius 0px !important;
+  -webkit-border-radius: 0px default-border-radius default-border-radius 0px !important; }
 
 .btn-radius-top {
-  border-radius: 10px 10px 0px 0px;
-  -ms-border-radius: 10px 10px 0px 0px;
-  -moz-border-radius: 10px 10px 0px 0px;
-  -webkit-border-radius: 10px 10px 0px 0px; }
+  border-radius: default-border-radius default-border-radius 0px 0px;
+  -ms-border-radius: default-border-radius default-border-radius 0px 0px;
+  -moz-border-radius: default-border-radius default-border-radius 0px 0px;
+  -webkit-border-radius: default-border-radius default-border-radius 0px 0px; }
 
 .btn-radius-bottom {
-  border-radius: 0px 0px 10px 10px;
-  -ms-border-radius: 0px 0px 10px 10px;
-  -moz-border-radius: 0px 0px 10px 10px;
-  -webkit-border-radius: 0px 0px 10px 10px; }
+  border-radius: 0px 0px default-border-radius default-border-radius;
+  -ms-border-radius: 0px 0px default-border-radius default-border-radius;
+  -moz-border-radius: 0px 0px default-border-radius default-border-radius;
+  -webkit-border-radius: 0px 0px default-border-radius default-border-radius; }
 
 .simple-btn-xxxl {
   padding: 18px;
@@ -8589,10 +8589,10 @@ select {
 input[type=text], input[type=email], input[type=tel], select {
   box-sizing: border-box;
   -moz-box-sizing: border-box;
-  border-radius: 10px;
-  -ms-border-radius: 10px;
-  -moz-border-radius: 10px;
-  -webkit-border-radius: 10px;
+  border-radius: default-border-radius;
+  -ms-border-radius: default-border-radius;
+  -moz-border-radius: default-border-radius;
+  -webkit-border-radius: default-border-radius;
   padding-left: 0.625em;
   width: 90%;
   height: 30px;
@@ -8642,10 +8642,10 @@ label {
     color: #94a9b9; }
 
 .border-radius-right-side {
-  border-radius: 0px 10px 10px 0px !important;
-  -ms-border-radius: 0px 10px 10px 0px !important;
-  -moz-border-radius: 0px 10px 10px 0px !important;
-  -webkit-border-radius: 0px 10px 10px 0px !important; }
+  border-radius: 0px default-border-radius default-border-radius 0px !important;
+  -ms-border-radius: 0px default-border-radius default-border-radius 0px !important;
+  -moz-border-radius: 0px default-border-radius default-border-radius 0px !important;
+  -webkit-border-radius: 0px default-border-radius default-border-radius 0px !important; }
 
 .select-arrow {
   width: 20px;

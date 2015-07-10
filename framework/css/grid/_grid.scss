@@ -31,7 +31,7 @@
 		background:$black;
 	div 	{
 			background:#444444;
-			border:1px $b-solid transparent;
+			border:1px $border-solid transparent;
 			@include border-box;
 		div
 		 		{
