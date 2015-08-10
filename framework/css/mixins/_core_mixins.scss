@@ -14,48 +14,48 @@
 
 //---- Start Border Radius Left Mixin ----//
 
-@mixin border-radius-left-side($default-border-radius, $one-side, $one-side, $default-border-radius) 
+@mixin border-radius-left-side($default-border-radius,  $no-border-radius,  $no-border-radius, $default-border-radius) 
 	{
-	border-radius:$default-border-radius $one-side $one-side $default-border-radius;
-	-ms-border-radius:$default-border-radius $one-side $one-side $default-border-radius;
-	-moz-border-radius:$default-border-radius $one-side $one-side $default-border-radius;
-	-webkit-border-radius:$default-border-radius $one-side $one-side $default-border-radius;
+	border-radius:$default-border-radius  $no-border-radius  $no-border-radius $default-border-radius;
+	-ms-border-radius:$default-border-radius  $no-border-radius  $no-border-radius $default-border-radius;
+	-moz-border-radius:$default-border-radius  $no-border-radius  $no-border-radius $default-border-radius;
+	-webkit-border-radius:$default-border-radius  $no-border-radius  $no-border-radius $default-border-radius;
 	}
 
 //---- End Border Radius Left Mixin ----//
 
 //---- Start Border Radius Right Mixin ----//
 
-@mixin border-radius-right-side($one-side, $default-border-radius, $default-border-radius, $one-side) 
+@mixin border-radius-right-side( $no-border-radius, $default-border-radius, $default-border-radius,  $no-border-radius) 
 	{
-	border-radius:$one-side $default-border-radius $default-border-radius $one-side!important;
-	-ms-border-radius:$one-side $default-border-radius $default-border-radius $one-side!important;
-	-moz-border-radius:$one-side $default-border-radius $default-border-radius $one-side!important;
-	-webkit-border-radius:$one-side $default-border-radius $default-border-radius $one-side!important;
+	border-radius: $no-border-radius $default-border-radius $default-border-radius  $no-border-radius!important;
+	-ms-border-radius: $no-border-radius $default-border-radius $default-border-radius  $no-border-radius!important;
+	-moz-border-radius: $no-border-radius $default-border-radius $default-border-radius  $no-border-radius!important;
+	-webkit-border-radius: $no-border-radius $default-border-radius $default-border-radius  $no-border-radius!important;
 	}
 
 //---- End Border Radius Right Mixin ----//
 
 //---- Start Border Radius Top Mixin ----//
 
-@mixin border-radius-top($default-border-radius, $default-border-radius, $one-side, $one-side) 
+@mixin border-radius-top($default-border-radius, $default-border-radius,  $no-border-radius,  $no-border-radius) 
 	{
-	border-radius:$default-border-radius $default-border-radius $one-side $one-side;
-	-ms-border-radius:$default-border-radius $default-border-radius $one-side $one-side;
-	-moz-border-radius:$default-border-radius $default-border-radius $one-side $one-side;
-	-webkit-border-radius:$default-border-radius $default-border-radius $one-side $one-side;
+	border-radius:$default-border-radius $default-border-radius  $no-border-radius  $no-border-radius;
+	-ms-border-radius:$default-border-radius $default-border-radius  $no-border-radius  $no-border-radius;
+	-moz-border-radius:$default-border-radius $default-border-radius  $no-border-radius  $no-border-radius;
+	-webkit-border-radius:$default-border-radius $default-border-radius  $no-border-radius  $no-border-radius;
 	}
 
 //---- End Border Radius Top Mixin ----//
 
 //---- Start Border Radius Bottom Mixin ----//
 
-@mixin border-radius-bottom($one-side, $one-side, $default-border-radius, $default-border-radius) 
+@mixin border-radius-bottom( $no-border-radius,  $no-border-radius, $default-border-radius, $default-border-radius) 
 	{
-	border-radius:$one-side $one-side $default-border-radius $default-border-radius;
-	-ms-border-radius:$one-side $one-side $default-border-radius $default-border-radius;
-	-moz-border-radius:$one-side $one-side $default-border-radius $default-border-radius;
-	-webkit-border-radius:$one-side $one-side $default-border-radius $default-border-radius;
+	border-radius: $no-border-radius  $no-border-radius $default-border-radius $default-border-radius;
+	-ms-border-radius: $no-border-radius  $no-border-radius $default-border-radius $default-border-radius;
+	-moz-border-radius: $no-border-radius  $no-border-radius $default-border-radius $default-border-radius;
+	-webkit-border-radius: $no-border-radius  $no-border-radius $default-border-radius $default-border-radius;
 	}
 
 //---- End Border Radius Bottom Mixin ----//

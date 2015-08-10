@@ -19,22 +19,19 @@
 			</ul>
 
 			<ul>
-				<li><a class="section" href="#">Content</a></li>
+				<li><a class="section" href="#">Type</a></li>
 				<li><a href="#">Headings</a></li>
 				<li><a href="#">Subheadings</a></li>
 				<li><a href="#">Paragraphs</a></li>
 				<li><a href="#">Lists</a></li>
 				<li><a href="#">Blockquotes</a></li>
 				<li><a href="#">Tables</a></li>
-				<li><a href="#">Tabs</a></li>
 			</ul>
 			
 			<ul>
 				<li><a class="section" href="#">Navigation</a></li>
-				<li><a href="#">Vertical Navigation</a></li>
-				<li><a href="#">Horizontal Navigation</a></li>
 				<li><a href="#">Dropdowns</a></li>
-				<li><a href="#">Tabbed Navigation</a></li>
+				<li><a href="#">Tabs</a></li>
 			</ul>
 
 			<ul>

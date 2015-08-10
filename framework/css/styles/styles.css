@@ -8412,35 +8412,35 @@ html[xmlns] .slides {
 .red-error {
   background-color: #8e0400; }
 
-.btn-radius-all {
-  border-radius: default-border-radius;
-  -ms-border-radius: default-border-radius;
-  -moz-border-radius: default-border-radius;
-  -webkit-border-radius: default-border-radius; }
+.border-radius-all {
+  border-radius: 10px;
+  -ms-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px; }
 
-.btn-radius-left-side, .button-groups-rounded button:first-child {
-  border-radius: default-border-radius 0px 0px default-border-radius;
-  -ms-border-radius: default-border-radius 0px 0px default-border-radius;
-  -moz-border-radius: default-border-radius 0px 0px default-border-radius;
-  -webkit-border-radius: default-border-radius 0px 0px default-border-radius; }
+.border-radius-left-side, .button-groups-rounded button:first-child {
+  border-radius: 10px 0px 0px 10px;
+  -ms-border-radius: 10px 0px 0px 10px;
+  -moz-border-radius: 10px 0px 0px 10px;
+  -webkit-border-radius: 10px 0px 0px 10px; }
 
-.btn-radius-right-side, .button-groups-rounded button:last-child {
-  border-radius: 0px default-border-radius default-border-radius 0px !important;
-  -ms-border-radius: 0px default-border-radius default-border-radius 0px !important;
-  -moz-border-radius: 0px default-border-radius default-border-radius 0px !important;
-  -webkit-border-radius: 0px default-border-radius default-border-radius 0px !important; }
+.border-radius-right-side, .button-groups-rounded button:last-child {
+  border-radius: 0px 10px 10px 0px !important;
+  -ms-border-radius: 0px 10px 10px 0px !important;
+  -moz-border-radius: 0px 10px 10px 0px !important;
+  -webkit-border-radius: 0px 10px 10px 0px !important; }
 
-.btn-radius-top {
-  border-radius: default-border-radius default-border-radius 0px 0px;
-  -ms-border-radius: default-border-radius default-border-radius 0px 0px;
-  -moz-border-radius: default-border-radius default-border-radius 0px 0px;
-  -webkit-border-radius: default-border-radius default-border-radius 0px 0px; }
+.border-radius-top {
+  border-radius: 10px 10px 0px 0px;
+  -ms-border-radius: 10px 10px 0px 0px;
+  -moz-border-radius: 10px 10px 0px 0px;
+  -webkit-border-radius: 10px 10px 0px 0px; }
 
-.btn-radius-bottom {
-  border-radius: 0px 0px default-border-radius default-border-radius;
-  -ms-border-radius: 0px 0px default-border-radius default-border-radius;
-  -moz-border-radius: 0px 0px default-border-radius default-border-radius;
-  -webkit-border-radius: 0px 0px default-border-radius default-border-radius; }
+.border-radius-bottom {
+  border-radius: 0px 0px 10px 10px;
+  -ms-border-radius: 0px 0px 10px 10px;
+  -moz-border-radius: 0px 0px 10px 10px;
+  -webkit-border-radius: 0px 0px 10px 10px; }
 
 .simple-btn-xxxl {
   padding: 18px;
@@ -8832,6 +8832,12 @@ footer {
   position: relative; }
 
 .block {
+  display: block; }
+
+.nav ul {
+  display: none; }
+
+.nav ul.show {
   display: block; }
 
 /*# sourceMappingURL=styles.css.map */

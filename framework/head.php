@@ -11,6 +11,7 @@
 	<script type="text/javascript" src="js/modernizr.js"></script>
 	<script type="text/javascript" src="js/jquery.flexslider.js"></script>
 	<script type="text/javascript" src="js/core.js"></script>
+	<script type="text/javascript" src="js/dropdown.js"></script>
 	<script type="text/javascript" src="js/shCore.js"></script>
 	<script type="text/javascript" src="js/shBrushJScript.js"></script>
 	<script type="text/javascript">SyntaxHighlighter.all();</script>

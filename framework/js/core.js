@@ -1,5 +1,5 @@
 $(document).ready(function(){
-	// Sets class for active state in nav
+    // Sets class for active state in nav
     setClass(["index", "docs", "type"]);
     function setClass(terms){ 
         terms.forEach(function(term){
@@ -23,6 +23,6 @@ $(document).ready(function(){
 
     // Header slider
     $('.flexslider').flexslider({
-		animation: "slide"
-		});
+        animation: "slide"
+    });
 });

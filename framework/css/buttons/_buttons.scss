@@ -51,54 +51,54 @@
 
 //////////// Start Button Colors ////////////
 
-%btn-radius-all
+%border-radius-all
 	{
-	@include border-radius-all(default-border-radius);
+	@include border-radius-all($default-border-radius);
 	}
 
-%btn-radius-left-side
+%border-radius-left-side
 	{
-	@include border-radius-left-side(default-border-radius, $no-border-radius, $no-border-radius, default-border-radius);
+	@include border-radius-left-side($default-border-radius, $no-border-radius, $no-border-radius, $default-border-radius);
 	}
 
-%btn-radius-right-side
+%border-radius-right-side
 	{
-	@include border-radius-right-side($no-border-radius, default-border-radius, default-border-radius, $no-border-radius);
+	@include border-radius-right-side($no-border-radius, $default-border-radius, $default-border-radius, $no-border-radius);
 	}
 
-%btn-radius-top
+%border-radius-top
 	{
-	@include border-radius-top(default-border-radius, default-border-radius, $no-border-radius, $no-border-radius);
+	@include border-radius-top($default-border-radius, $default-border-radius, $no-border-radius, $no-border-radius);
 	}
 
-%btn-radius-bottom
+%border-radius-bottom
 	{
-	@include border-radius-bottom($no-border-radius, $no-border-radius, default-border-radius, default-border-radius);
+	@include border-radius-bottom($no-border-radius, $no-border-radius, $default-border-radius, $default-border-radius);
 	}
 
-.btn-radius-all
+.border-radius-all
 	{
-	@extend %btn-radius-all;
+	@extend %border-radius-all;
 	}
 
-.btn-radius-left-side
+.border-radius-left-side
 	{
-	@extend %btn-radius-left-side;
+	@extend %border-radius-left-side;
 	}
 
-.btn-radius-right-side
+.border-radius-right-side
 	{
-	@extend %btn-radius-right-side;
+	@extend %border-radius-right-side;
 	}
 
-.btn-radius-top
+.border-radius-top
 	{
-	@extend %btn-radius-top;
+	@extend %border-radius-top;
 	}
 
-.btn-radius-bottom
+.border-radius-bottom
 	{
-	@extend %btn-radius-bottom;
+	@extend %border-radius-bottom;
 	}
 
 .simple-btn-xxxl 	
@@ -171,11 +171,11 @@
 	@extend %button-group-style; 
 	button:first-child
 		{
-		@extend %btn-radius-left-side;	
+		@extend %border-radius-left-side;	
 		}
 	button:last-child
 		{
-		@extend %btn-radius-right-side;	
+		@extend %border-radius-right-side;	
 		}	
 	}
 

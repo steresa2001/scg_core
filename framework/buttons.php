@@ -91,23 +91,23 @@
 				</div>
 
 				<div class="row">
-					<button class="simple-btn-xl btn-radius-all primary-purple" href="#">Rounded button all sides</button>
-					<button class="simple-btn-xl btn-radius-left-side primary-purple" href="#">Rounded button left side</button>
-					<button class="simple-btn-xl btn-radius-right-side primary-purple" href="#">Rounded button right side</button>
+					<button class="simple-btn-xl border-radius-all primary-purple" href="#">Rounded button all sides</button>
+					<button class="simple-btn-xl border-radius-left-side primary-purple" href="#">Rounded button left side</button>
+					<button class="simple-btn-xl border-radius-right-side primary-purple" href="#">Rounded button right side</button>
 				</div>
 
 				<div class="row">
-					<button class="simple-btn-xl btn-radius-top primary-purple" href="#">Rounded button top</button>
-					<button class="simple-btn-xl btn-radius-bottom primary-purple" href="#">Rounded button bottom</button>
+					<button class="simple-btn-xl border-radius-top primary-purple" href="#">Rounded button top</button>
+					<button class="simple-btn-xl border-radius-bottom primary-purple" href="#">Rounded button bottom</button>
 				</div>
 
 				<div class="row">
 					<script type="syntaxhighlighter" class="brush: js ctns-24"><![CDATA[
-		  				<button class="simple-btn-xl btn-radius-all primary-purple" href="#">/* Rounded button all sides */</button>
-						<button class="simple-btn-xl btn-radius-left-side primary-purple" href="#">/* Rounded button left side */</button>
-						<button class="simple-btn-xl btn-radius-right-side primary-purple" href="#">/* Rounded button right side */</button>
-						<button class="simple-btn-xl btn-radius-top primary-purple" href="#">/* Rounded button top */</button>
-						<button class="simple-btn-xl btn-radius-bottom primary-purple" href="#">/* Rounded button bottom */</button>
+		  				<button class="simple-btn-xl border-radius-all primary-purple" href="#">/* Rounded button all sides */</button>
+						<button class="simple-btn-xl border-radius-left-side primary-purple" href="#">/* Rounded button left side */</button>
+						<button class="simple-btn-xl border-radius-right-side primary-purple" href="#">/* Rounded button right side */</button>
+						<button class="simple-btn-xl border-radius-top primary-purple" href="#">/* Rounded button top */</button>
+						<button class="simple-btn-xl border-radius-bottom primary-purple" href="#">/* Rounded button bottom */</button>
 					]]></script>
 				</div>
 			</section>
