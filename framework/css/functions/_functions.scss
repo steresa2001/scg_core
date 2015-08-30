@@ -9,7 +9,6 @@
 	@function my-calculation-function($some-number, $another-number)
 		{
   		@return $some-number + $another-number;
-		
 		}
 
 	//%%%%%% Calculates custom grid in percentages including margins %%%%%%//
@@ -73,13 +72,13 @@
 	//%%%%%% Calculates grid in percentages not including margins %%%%%%//
 	@for $num from 1 through 24
 		{
-		.grid-no-margin div.ctns-#{$num} {margin: 0 0; width:percentage((20.000px * $num * 2)/($grid-max-width));}
+		.grid-no-margin div.ctns-#{$num} {margin: 0 0; width:percentage((20px * $num * 2)/($grid-max-width));}
 		};
 
 
 	@for $num from 1 through 24
 		{
-		.grid-no-margin div.ctn-#{$num} {margin: 0 0; width:percentage((20.000px * $num * 2)/($grid-max-width));}
+		.grid-no-margin div.ctn-#{$num} {margin: 0 0; width:percentage((20px * $num * 2)/($grid-max-width));}
 		};
 
 

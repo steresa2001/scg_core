@@ -1,0 +1,117 @@
+//****  This is the master scss/css file for all navigation Styles  ****//
+
+//---- Start SCSS - CSS ----//
+nav.main 
+	{
+	padding:0px 20px;
+	min-height:40px;
+	background-color:$menu-bar-color;
+	border:1px $border-solid $menu-bar-border-color;
+	ul 
+		{
+		margin:0;
+		padding:0;
+		list-style-type:none;
+		float:$float-l;
+		}
+	a 
+		{
+		font-size:calc-em(16px, $context);
+		color:$menu-bar-anchor-color;
+		text-decoration:none;
+		&:focus 
+			{
+			background-color:$menu-bar-li-focus-color;
+			}
+		}
+	a.has-dropdown
+		{
+		padding:10px 20px;
+		}
+	}
+
+.sub-nav ul
+		{
+		display:none;
+		padding:0;
+	&.show
+			{
+			display:$blc;
+			a 
+				{
+				display:$blc;
+				padding:0 calc-em(8px, $context);
+				}
+			}
+		}
+ul.sub-nav li 
+		{
+		float:$float-l;
+		padding:12px 0;
+		position:$pos-rel;
+		}
+ul.sub-nav li ul
+		{
+		min-width:160px;
+		top:39px;
+		left:0;
+		position:$pos-abs;
+		background-color:$sub-menu-background-color;
+		border:1px $border-solid $menu-bar-border-color;
+		border-top:0;
+		}
+ul.sub-nav li ul li
+		{
+		float:none;
+		padding:calc-em(8px, $context);
+		border-bottom:1px $border-solid $menu-bar-border-color;
+	&:hover
+			{
+			background-color:$sub-menu-anchor-hover-color;
+			}
+	&:last-child 
+			{
+			border:none;
+			}
+		}
+
+//---- End SCSS - CSS ----//
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -8687,6 +8687,57 @@ table {
 .table-hover tbody tr:hover {
   background-color: #f7f7f7; }
 
+nav.main {
+  padding: 0px 20px;
+  min-height: 40px;
+  background-color: #f3f3f3;
+  border: 1px solid #ccc; }
+  nav.main ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    float: left; }
+  nav.main a {
+    font-size: 1em;
+    color: #abaaaa;
+    text-decoration: none; }
+    nav.main a:focus {
+      background-color: #fff; }
+  nav.main a.has-dropdown {
+    padding: 10px 20px; }
+
+.sub-nav ul {
+  display: none;
+  padding: 0; }
+  .sub-nav ul.show {
+    display: block; }
+    .sub-nav ul.show a {
+      display: block;
+      padding: 0 0.5em; }
+
+ul.sub-nav li {
+  float: left;
+  padding: 12px 0;
+  position: relative; }
+
+ul.sub-nav li ul {
+  min-width: 160px;
+  top: 39px;
+  left: 0;
+  position: absolute;
+  background-color: #fcfcfc;
+  border: 1px solid #ccc;
+  border-top: 0; }
+
+ul.sub-nav li ul li {
+  float: none;
+  padding: 0.5em;
+  border-bottom: 1px solid #ccc; }
+  ul.sub-nav li ul li:hover {
+    background-color: #f3f3f3; }
+  ul.sub-nav li ul li:last-child {
+    border: none; }
+
 body img {
   max-width: 100%;
   height: auto;
@@ -8832,12 +8883,6 @@ footer {
   position: relative; }
 
 .block {
-  display: block; }
-
-.nav ul {
-  display: none; }
-
-.nav ul.show {
   display: block; }
 
 /*# sourceMappingURL=styles.css.map */
