@@ -19,6 +19,10 @@ nav.main
 		font-size:calc-em(16px, $context);
 		color:$menu-bar-anchor-color;
 		text-decoration:none;
+		&:hover 
+			{
+			color:#ccc;
+			}
 		&:focus 
 			{
 			background-color:$menu-bar-li-focus-color;
@@ -26,7 +30,7 @@ nav.main
 		}
 	a.has-dropdown
 		{
-		padding:10px 20px;
+		padding:12px 20px;
 		}
 	}
 
@@ -40,7 +44,7 @@ nav.main
 			a 
 				{
 				display:$blc;
-				padding:0 calc-em(8px, $context);
+				padding:10px;
 				}
 			}
 		}
@@ -63,7 +67,7 @@ ul.sub-nav li ul
 ul.sub-nav li ul li
 		{
 		float:none;
-		padding:calc-em(8px, $context);
+		padding:0px;
 		border-bottom:1px $border-solid $menu-bar-border-color;
 	&:hover
 			{

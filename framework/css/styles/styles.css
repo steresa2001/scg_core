@@ -8701,10 +8701,12 @@ nav.main {
     font-size: 1em;
     color: #abaaaa;
     text-decoration: none; }
+    nav.main a:hover {
+      color: #ccc; }
     nav.main a:focus {
       background-color: #fff; }
   nav.main a.has-dropdown {
-    padding: 10px 20px; }
+    padding: 12px 20px; }
 
 .sub-nav ul {
   display: none;
@@ -8713,7 +8715,7 @@ nav.main {
     display: block; }
     .sub-nav ul.show a {
       display: block;
-      padding: 0 0.5em; }
+      padding: 10px; }
 
 ul.sub-nav li {
   float: left;
@@ -8731,7 +8733,7 @@ ul.sub-nav li ul {
 
 ul.sub-nav li ul li {
   float: none;
-  padding: 0.5em;
+  padding: 0px;
   border-bottom: 1px solid #ccc; }
   ul.sub-nav li ul li:hover {
     background-color: #f3f3f3; }
