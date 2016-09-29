@@ -419,6 +419,7 @@ $(document).ready(function() {
 			
 				if(deal) {
 					$(winAmount).html(0);
+					$( ".chips-wrapper" ).animate({ "top": "420px" }, "slow" );
 					$('#deal').hide();
 					$('.btns').addClass('disabled-draw');
 					setTimeout(function() {
@@ -428,6 +429,7 @@ $(document).ready(function() {
 				}
 				if(!deal) {
 					$('#draw').hide();
+					$( ".chips-wrapper" ).animate({ "top": "360px" }, "slow" );
 					$('.btns').addClass('disabled-deal');
 					setTimeout(function() {
 						$('.btns').removeClass('disabled-deal');
